@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blocksmash.io</title>
+	<style type="text/css">
+		@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+		*{font-family: sans-serif;}
+		body{background-image: linear-gradient(to right, #e99209, #c89a00, #a79e04, #87a021, #689f38);}
+		.main{height:auto; width: 60%; background-color:none; margin: auto; margin-top: -35px; }
+		.up{height: 200px; width: 100%; }
+		.down{height:390px; width:460px; background-color:white; margin:auto; border-radius: 15px;}
+		.logo{height: 150px; width: 100%;}
+		.contain{ height:50px; background-color:#FF8F00; width:460px; height: 50px; border-radius:10px; margin:auto;}
+		.logo img{ height:100px; width:150px ;position: absolute; margin-left: 320px; margin-top:40px;}
+		.box{margin-left:40px; padding-top:20px;}
+		.box input{padding:12px; width:320px; background-color:white; border:1px solid #5C6975; color:#000; outline:0; border-radius: 0px 20px 20px 0px ; position: fixed; }
+		::placeholder{color:#ABB1BA;}
+		.box input:hover{background-color:#E8F0FE;}
+ 
+		.link{text-decoration: none;  padding: 15px 160px 15px 160px; border-radius: 5px; color: white; background-color: #389F99; margin-top: 20px; font-size: 18px;}
+		.link:hover{background:linear-gradient(to right, #e99209, #c89a00, #a79e04, #87a021, #689f38); }
+
+		
+	</style>
+</head>
+<body>
+	
+<div class="main">
+	
+	<div class="up">
+		<div class="logo">
+		<img src="logo.png">
+		</div>
+<div class="contain">
+	<p style="font-size:18px; color:white; text-align: center; padding-top:15px;">Please log in!</p>
+</div>
+</div>
+	<br><br>
+		<div class="down">
+			<form action="process2.php" method="POST">
+			<div class="box">
+				<i class="fa fa-user" aria-hidden="true" style="color: #5C6975; font-size:50px; text-align: center; margin-left:170px;"></i>
+				<p style="font-size: 16px; color:#606D78; text-align: center; margin-left: -50px;">Sign in to your account</p>
+				<p style="color: #939CA4">Username<strong style="color:red">*</strong> </p>
+				<i class="fa fa-user" aria-hidden="true" style="background-color:#fff; border-radius:20px 0px 0px 20px ;padding-bottom: 13px; padding-top: 10px; border:1px solid #5C6975; color:#000;padding-right: 8px; padding-left: 9px; "></i><input type="text" placeholder="Username" name="usrname">
+				<p style="color: #939CA4">Password<strong style="color:red">*</strong> </p>
+				<i class="fa fa-key" aria-hidden="true" style="background-color:#fff; padding-bottom: 13px; padding-top: 10px; padding-right: 8px; padding-left: 7px; border-radius:20px 0px 0px 20px ; border:1px solid #5C6975;  color:#000;"></i><input type="password" placeholder="Password" name="pwd">
+			</div>
+
+			<br><br>
+			<center><a href="#" class="link" type="submit" name="login">Login</a></center>
+		</div>
+		</form>
+
+
+		<a href="" style="float: left; color:white; text-decoration: none; margin-left: 220px; margin-top: 10px;">Recover Password</a> <a href="" style="float: right; color:white; text-decoration: none; margin-right: 220px; margin-top: 10px;">Creat Account</a>
+
+</div>
+</body>
+</html>
