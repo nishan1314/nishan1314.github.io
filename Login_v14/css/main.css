@@ -252,7 +252,7 @@ iframe {
   top: -1px;
   left: -1px;
   pointer-events: none;
-  border: 1px solid #57b846;
+  border: 1px solid #E30047;
   border-radius: 3px;
 
   visibility: hidden;
@@ -371,7 +371,7 @@ iframe {
 }
 
 .input-checkbox100:checked + .label-checkbox100::before {
-  color: #57b846;
+  color: red;
 }
 
 
@@ -413,7 +413,7 @@ iframe {
 }
 
 .login100-form-btn:hover {
-  background-color: #57b846;
+  background-color: #EB2D46;
 }
 
 
