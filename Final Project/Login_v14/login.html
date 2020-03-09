@@ -1,111 +1,236 @@
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<title>Login V14</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-</head>
-<body style="background-image: radial-gradient(circle, #e30047, #e52055, #e53263, #e54070, #e44d7c); background-size:cover; background-repeat:no-repeat; height: 100vh; background-attachment: fixed;">
-	
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
-				<form class="login100-form validate-form flex-sb flex-w" method="post">
-					<span class="login100-form-title p-b-32">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-						
-						Account Login
-						<a href="signup.php" class="btn" style="float:right; font-weight: bold; background-color: #E30047; color:white; ">Sign Up</a>
-					</span>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-					<span class="txt1 p-b-11">
-						Username
-					</span>
-					<div class="wrap-input100 validate-input m-b-36" data-validate = "Username is required">
-						<input class="input100" type="email" name="email" >
-						<span class="focus-input100"></span>
-					</div>
-					
-					<span class="txt1 p-b-11">
-						Password
-					</span>
-					<div class="wrap-input100 validate-input m-b-12" data-validate = "Password is required">
-						<span class="btn-show-pass">
-							<i class="fa fa-eye"></i>
-						</span>
-						<input class="input100" type="password" name="pass" >
-						<span class="focus-input100"></span>
-					</div>
-					
-					<div class="flex-sb-m w-full p-b-48">
-						<div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
-								Remember me
-							</label>
-						</div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <title>Priyoshop.com</title>
 
-						<div>
-							<a href="#" class="txt3">
-								Forgot Password?
-							</a>
-						</div>
-					</div>
 
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" type="submit" name="loginBtn">
-							Login
-						</button>
-					</div>
 
-				</form>
-			</div>
-		</div>
-	</div>
-	
+  </head>
+  <body style="background-color: #F6F6F6;">
 
-	<div id="dropDownSelect1"></div>
-	
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+      <div class="container-fluid d-none d-lg-block">
+        <div class="row py-2" style="background: #C8003E;">
+            <div class="col-lg-4 text-sm-left d-lg-block ">
+         <span style="color:white;">Trusted Online Shopping site in Bangladesh</span>
 
-</body>
+          
+            </div>
+
+
+            <div class="col-lg-5 d-lg-block" >
+              <a href="tel:01677171502" style=" color:#fff; text-decoration:none;"><img src="support.png" class="img img-responsive" style="max-height: 20px; ">&nbsp +8801677171502(9am-10pm)</a>
+              <span style=" color:#fff;">|</span> 
+              <span style=" color:#fff;"><i class="fa fa-envelope" style="font-size:18px;"></i>&nbsp prioyoshop22@gmail.com</span>
+            </div>
+
+            <div class="col-lg-3 d-lg-block">
+              <a href="https://www.facebook.com/PriyoShopcom" target="_block"><i class="fa fa-facebook" style=" margin-right: 6%; color:white"></i></a>
+          <a href="#"><i class="fa fa-twitter" style=" margin-right: 6%; color:white"></i></a>
+          <a href="#"><i class="fa fa-instagram" style=" margin-right: 6%; color:white"></i></a>
+             <a href="https://www.youtube.com/channel/UCa9OQR31OFrEmgOzPSPguuA"><i class="fa fa-youtube" style=" margin-right: 6%; color:white"></i></a>
+             <a href="#"><i class="fa fa-google-plus" style=" margin-right: 6%; color:white"></i></a>
+            </div>
+        </div>
+ </div>
+    <div class="container-fluid d-lg-none d-sm-block">
+      <div class="row py-2" style="background: #C8003E;">
+        <div class="col-lg-12 col-sm-12">
+          <a href=""><i class="fa fa-facebook" style=" margin-right: 6%; color:white"></i></a>
+          <a href="#"><i class="fa fa-twitter" style=" margin-right: 6%; color:white"></i></a>
+          <a href="#"><i class="fa fa-instagram" style=" margin-right: 6%; color:white"></i></a>
+             <a href="#"><i class="fa fa-youtube" style=" margin-right: 6%; color:white"></i></a>
+             <a href="#"><i class="fa fa-google-plus" style=" margin-right: 6%; color:white"></i></a>
+        </div>
+      </div>
+    </div>    
+        
+
+    
+            <nav class="sticky-top">
+               <div class="container-fluid navbar navbar-dark  navbar-expand-lg"  style="background-color:#E30047;">
+  <a class="navbar-brand" href="#"><img src="Logo-Ofificial2.png" class="img img-responsive" style="max-height: 80px;" ></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:1px solid #fff; outline:none">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+ <form class="form-inline my-2 my-lg-0 mr-lg-5 ml-lg-5">
+      <input class="form-control" type="search" placeholder="Search for products" aria-label="Search" style="outline:none; width: 350px; border-radius: 0px;">
+      <button class="btn btn-dark my-2 my-sm-0" type="submit" style="outline:none;border-radius: 0px;"><i class="fa fa-search" style="font-size:18px;"></i>&nbspSearch</button>
+   </form>
+
+<hr style="border:1px solid white" class="d-lg-none">
+<section class="pl-lg-5" >
+
+    <ul class="navbar-nav mr-auto">
+     <li class="nav-item">
+        <a class="nav-link" href="#" style="color:white;"> My Cart&nbsp<img src="bag.png" class="img img-responsive" style="max-height: 25px;"></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
+          My Account &nbsp<img src="account.png" class="img img-responsive" style="max-height: 25px;">
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="Login_v14/login.html" style="border-bottom: 1px solid #ccc"><img src="edit.png" class="img img-responsive" style="max-height:20px;">&nbspLogin</a>
+          <a class="dropdown-item" href="Login_v14/register.html" style="border-bottom: 1px solid #ccc"><img src="padlock.png" class="img img-responsive" style="max-height: 20px;">&nbspRegister</a>
+          <a class="dropdown-item" href="#" style="border-bottom: 1px solid #ccc"><img src="wishlist.png" class="img img-responsive" style="max-height: 20px;">&nbspWishlist</a>
+        </div>
+      </li>
+
+ </ul>
+ </section>  
+  </div>
+</div>
+</nav>
+<br>
+
+
+<div class="container">
+<div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12">
+    <span class="h4 font-weight-bold ">WELCOME, PLEASE LOGIN!<hr></span>
+  </div>
+</div>
+</div>
+<br>
+
+
+<!--start-->
+<div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-12 col-sm-12" style="border:1px solid #ccc; background-color: #fff; margin: auto; ">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 py-4" style="background-color: #F74258; color:white; text-align: center">
+                  <b>LOGIN WITH MOBILE NUMBER OR EMAIL ADDRESS</b>
+                </div>
+              </div>
+              <br>
+              <div class="row" style="max-width:600px; margin:auto">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <label>Username<b style="color:red">*</b></label>
+                  <input type="text" name="" value="" class="form-control" style="border-radius: 0px;"><br>
+
+                   <label>Password<b style="color:red">*</b></label>
+                  <input type="Password" name="" value="" class="form-control"style="border-radius: 0px;"><br>
+
+                   
+
+                </div>
+              </div>
+
+
+
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12" align="center"><br>
+                  <label class="form-check-label text-muted">
+    				<input type="checkbox" class="form-check-input" value="">Remember me?
+  					</label>
+                  <a href="" class="text-muted ml-4" style="text-decoration: none;">Forgot Password?</a>
+                </div>
+              </div>
+
+              
+
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12" align="center"><br>
+                  <button type="submit" class="btn" style="border-radius:0px; color:white; background-color:#F74258;padding-right:20px; padding-left: 20px;">LOGIN</button>
+                  <a href="regis.html" class="btn" style="border-radius:0px; color:white; background-color:#F74258;padding-right:25px; padding-left: 25px;">REGISTER</a>
+                </div>
+              </div><br>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+<!--end-->
+<br>
+<div class="container-fluid">
+     <div class="row" style="background-color: #353A3D; color: white;">
+
+       <div class="col-lg-4 col-md-4 col-sm-12 py-4" >
+        <span class="h5 text-light">CUSTOMER SERVICE</span><hr style="border:1px solid #9E9E9C"><br>
+        <span style="line-height: 40px">
+        <a href="" style="color:#F6F6F6; text-decoration: none">Security Policy</a><br>
+         <a href="" style="color:#F6F6F6; text-decoration: none">Shipping Replacement</a><br>
+         <a href="" style="color:#F6F6F6; text-decoration: none">Privacy Policy</a><br>
+         <a href="" style="color:#F6F6F6; text-decoration: none">Term of Use</a><br>
+         </span>
+       </div>
+
+       <div class="col-lg-4 col-md-4 col-sm-12 py-4">
+         <span class="h5 text-light">CONTACT US</span><hr style="border:1px solid #9E9E9C"><br>
+        <span style="line-height: 40px">
+        <a href="" style="color:#F6F6F6; text-decoration: none">39, North Road, Vuter Goli, Near Jame Masjid, Dhanmondi, Dhaka 1205</a><br>
+         <a href="" style="color:#F6F6F6; text-decoration: none">admin@priyoshop.com</a><br>
+         <a href="" style="color:#F6F6F6; text-decoration: none">09636-102030</a><br>
+        
+         </span>
+
+       </div>
+
+
+
+
+       <div class="col-lg-4 col-md-4 col-sm-12 py-4">
+         <span class="h5 text-light"> SUBSCRIBE NEWSLETTER</span><hr style="border:1px solid #9E9E9C"><br>
+        
+
+        <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Email" aria-label="Search" style="outline:none;">
+      <button class="btn text-light my-2 my-sm-0" type="submit" style="outline:none; background-color: black">&nbspJOIN US</button>
+   </form>
+        
+         <span class=" text-light">Get the first look at collaborations, new products, events, sales & more.</span><br><br>
+         <span class="h5 text-light">Payment method-- </span><br><br>
+         <div class="bg-light" style="width: 85%;">
+        <img src="images/visa.png" class="img img-responsive ml-3" style="max-height:40px;">&nbsp&nbsp
+          <img src="images/master.png" class="img img-responsive ml-3" style="max-height:40px;">&nbsp&nbsp
+          <img src="images/bkash.png" class="img img-responsive ml-3" style="max-height:30px;">&nbsp&nbsp
+         <img src="images/paypal.png" class="img img-responsive ml-3" style="max-height:50px;">&nbsp&nbsp
+        <img src="images/mest.png" class="img img-responsive ml-3" style="max-height:40px;">&nbsp&nbsp
+        <img src="images/bitcoin.png" class="img img-responsive ml-3" style="max-height:30px;">
+         </div>
+       </div>
+     </div>
+
+     <div class="row" style="height: 50px;">
+       <div class="col-lg-12 col-md-12 col-sm-12 py-3  text-right" style="background-color: #000;">
+        <span class="text-light"> © 2020 Priyoshop.com. All rights reserved || Developed By Skill Based IT-SBIT</span>
+       </div>
+     </div>
+   </div>
+
+
+
+
+
+
+
+
+        
+     
+   
+
+
+     
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>
