@@ -167,7 +167,8 @@ iframe {
 
 .limiter {
   width: 100%;
-  margin: 0 auto;
+  margin: 0px;
+
 }
 
 .container-login100 {
@@ -182,6 +183,7 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
+
   
   background-color:;
 }
@@ -190,8 +192,8 @@ iframe {
 .wrap-login100 {
   width: 560px;
   background: #fff;
-  border-radius: 10px;
   position: relative;
+ 
 }
 
 

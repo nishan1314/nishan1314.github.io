@@ -1,36 +1,4 @@
 
-<?php
-include("connection.php");
-
-$message="";
-
-$userName=isset($_POST["username"])?$_POST["username"]:"";
-$userEmail=isset($_POST["email"])?$_POST["email"]:"";
-$userPass=isset($_POST["pass"])?$_POST["pass"]:"";
-$userConPass=isset($_POST["Repass"])?$_POST["Repass"]:"";
-
-if(isset($_POST["btn_reg"]))
-{
-	if(!empty($userEmail) && !empty($userPass))
-	{
-		$insert=$con->query("INSERT INTO `signup`(`username`, `email`, `password`, `con_pass`) VALUES ('$userName','$userEmail','$userPass','$userConPass')");
-		if($insert)
-		{
-			$message="<b style='color:green'>Data Inserted Successfully</b>";
-		}
-		else
-		{
-			//$message="<b style='color:red'>Data Insert Unsuccessfull</b>";
-		}
-	}
-	else
-	{
-		echo "<script>alert('Sorry !! Field is Empty')</script>";
-	}
-}
-
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -62,30 +30,15 @@ if(isset($_POST["btn_reg"]))
 <!--===============================================================================================-->
 
 
-<script type="text/javascript">
-	
-var check = function() {
-  if (document.getElementById('password').value ==
-    document.getElementById('confirm_password').value) 
-  {
-    document.getElementById('message').style.color = 'green';
-    document.getElementById('message').innerHTML = 'Matching';
-  } 
-  else 
-  {
-    document.getElementById('message').style.color = 'red';
-    document.getElementById('message').innerHTML = 'Not matching';
-  }
-}
-</script>
+
 </head>
-<body style="background-image: radial-gradient(circle, #e30047, #e52055, #e53263, #e54070, #e44d7c);background-attachment: fixed">
+<body>
 	
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
 				<form class="login100-form validate-form flex-sb flex-w" method="post">
-					<?php echo $message;?><br>
+					
 					<span class="login100-form-title p-b-32">
 						Register
 					</span>
@@ -168,7 +121,7 @@ var check = function() {
 	</div>
 	
 
-	<div id="dropDownSelect1"></div>
+	
 	
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
