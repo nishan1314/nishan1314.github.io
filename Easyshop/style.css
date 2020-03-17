@@ -1,0 +1,9 @@
+.card{cursor: pointer;}
+.card:hover{text-decoration: none;
+ box-shadow: 0px 0px 5px 0px #ccc;}
+ .ml-1{transition: 0.3s ease}
+ .ml-1:hover{transform: scale(0.9);}
+
+ 
+
+ 
