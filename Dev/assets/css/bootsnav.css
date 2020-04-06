@@ -1412,9 +1412,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         padding-right: 0;
     }
     
-    nav.bootsnav.navbar-full .navbar-toggle {
-        margin-right: -15px;
-    }
+    
     
     nav.bootsnav.navbar-full ul.nav > li > a{
         font-size: 18px !important;
