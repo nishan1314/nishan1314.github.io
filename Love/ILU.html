@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <iframe style="display: none" src="tum hi ho.mp3" width="0" height="0" frameborder="0" allowfullscreen autoplay="1"></iframe>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+      h1{
+          border: 2px dotted #ff3838;
+          margin:auto;
+          max-width: 500px;
+          margin-top: 50px;
+          text-align: center;
+          color: #fff;
+          font-family: roboto slab;
+          letter-spacing: 15px;
+        }
+
+      span{
+           color: #ff3838;
+          }
+
+
+          .heart-wrapper{
+              margin-top: 200px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-family: sans-serif;
+
+          }
+          .heart{
+  width: 100px;
+  height:100px;
+  background-color: #ff3838;
+  position: relative;
+  transform: rotate(45deg);
+  animation: heartbeat 1.4s linear infinite;
+}
+.heart:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-50%);
+  background: #ff3838;
+  border-radius: 50%;
+}
+.heart:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-50%);
+  background: #ff3838;
+  border-radius: 50%;
+}
+@keyframes heartbeat{
+  0%{transform: rotate(45deg) scale(1)}
+  25%{transform: rotate(45deg) scale(1)}
+  30%{transform: rotate(45deg) scale(1.4)}
+  50%{transform: rotate(45deg) scale(1.2)}
+  70%{transform: rotate(45deg) scale(1.4)}
+  100%{transform: rotate(45deg) scale(1)}
+}
+    </style>
+
+    <title>Princess</title>
+  </head>
+  <body>
+   
+
+<div class="container-fluid" style="height: 100vh; background-color: #262626;">
+  <div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+      <h1>I <span>L</span>O<span>V</span>E Y<span>O</span>U</h1>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-12">
+           <div class="heart-wrapper">
+                <div class="heart"></div>
+          </div>
+    </div>
+  </div>
+
+
+
+
+
+
+<div class="row">
+    <div class="col-lg-12">
+      <h2 style="color:white; font-size: 50px; text-shadow: 0 0 10px pink; text-align: center; padding-top:80px; font-family: roboto slab; letter-spacing: 12px;">Oishi</h2>
+    </div>
+  </div>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
