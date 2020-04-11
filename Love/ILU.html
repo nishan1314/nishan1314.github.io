@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <iframe style="display: none" src="tum hi ho.mp3" width="0" height="0" frameborder="0" allowfullscreen autoplay="1"></iframe>
+    
     <style type="text/css">
       @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
       h1{
@@ -75,6 +75,18 @@
 }
     </style>
 
+
+
+    <script type="text/javascript">
+    	var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (!isChrome){
+      $('#iframeAudio').remove()
+  }
+  else {
+      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+  }
+    </script>
+
     <title>Princess</title>
   </head>
   <body>
@@ -104,6 +116,10 @@
 <div class="row">
     <div class="col-lg-12">
       <h2 style="color:white; font-size: 50px; text-shadow: 0 0 10px pink; text-align: center; padding-top:80px; font-family: roboto slab; letter-spacing: 12px;">Oishi</h2>
+
+      <audio autoplay loop  id="playAudio">
+    <source src="tum hi ho.mp3">
+</audio>
     </div>
   </div>
 
