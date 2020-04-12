@@ -12,6 +12,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>EasyShop</title>
+
+    <style type="text/css">
+      .icon {
+  display: inline-block;
+  cursor: pointer;
+  float:right;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+    </style>
   </head>
   <body>
 
@@ -73,9 +101,11 @@
          <a class="navbar-brand logo_h" href="index.html" >
             <img src="logo2.png" style="max-height:55px;" alt="" />
           </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style=" outline:none; float: right;">
-    <span class="navbar-toggler-icon" ></span>
-  </button>
+    <div class="icon d-lg-none d-sm-block" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction(this)" style=" outline:none; float: right;">
+    <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  </div>
 
         </div>
   
@@ -824,7 +854,11 @@
 
 
 
-
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
 
 
 
