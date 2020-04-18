@@ -1,1 +1,0 @@
-.navbar-toggler{border:none;}
