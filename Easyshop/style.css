@@ -1,4 +1,4 @@
-.card{cursor: pointer;}
+.card{cursor: pointer; border-style: none; border:1px solid #eee;}
 .card:hover{text-decoration: none;
  box-shadow: 0px 0px 5px 0px #ccc;}
  .ml-1{transition: 0.3s ease}
