@@ -1,0 +1,22 @@
+<svg width="42px"  height="42px"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-google" style="background: none;">
+    <g transform="translate(50 50)">
+      <g transform="rotate(0)">
+        <animateTransform attributeName="transform" type="rotate" calcMode="discrete" values="0;90;180;270;360" keyTimes="0;0.25;0.5;0.75;1" ng-attr-dur="{{config.speed}}s" repeatCount="indefinite" dur="1.6s"></animateTransform>
+        <path ng-attr-d="{{config.d1}}" fill="#2ed607" d="M-50 0A50 50 0 1 0 50 0">
+          <animate attributeName="fill" calcMode="discrete" values="#2ed607;#0faddb;#d7d80e;#df4612;#2ed607" keyTimes="0;0.24;0.49;0.74;0.99" ng-attr-dur="{{config.speed}}s" repeatCount="indefinite" dur="1.6s"></animate>
+        </path>
+        <path ng-attr-d="{{config.d2}}" fill="#0faddb" d="M-50 0A50 50 0 0 1 50 0">
+          <animate attributeName="fill" calcMode="discrete" values="#0faddb;#d7d80e;#df4612;#2ed607;#0faddb" keyTimes="0;0.25;0.5;0.75;1" ng-attr-dur="{{config.speed}}s" repeatCount="indefinite" dur="1.6s"></animate>
+        </path>
+        <path ng-attr-d="{{config.d4}}" stroke="rgb(32, 150, 5)" stroke-width="2" d="M-49 0L49 0">
+          <animate attributeName="stroke" values="#2ed607;rgb(32, 150, 5);rgb(11, 121, 153);#0faddb;rgb(11, 121, 153);rgb(151, 151, 10);#d7d80e;rgb(151, 151, 10);rgb(156, 49, 13);#df4612;rgb(156, 49, 13);rgb(32, 150, 5);#2ed607" keyTimes="0;0.124;0.125;0.25;0.374;0.375;0.5;0.624;0.625;0.75;0.874;0.875;1" ng-attr-dur="{{config.speed}}s" repeatCount="indefinite" dur="1.6s"></animate>
+        </path>
+        <g transform="scale(1 -0.167001)">
+          <path ng-attr-d="{{config.d3}}" fill="rgb(32, 150, 5)" d="M-50 0A50 50 0 0 1 50 0Z">
+            <animate attributeName="fill" values="#2ed607;rgb(32, 150, 5);rgb(11, 121, 153);#0faddb;rgb(11, 121, 153);rgb(151, 151, 10);#d7d80e;rgb(151, 151, 10);rgb(156, 49, 13);#df4612;rgb(156, 49, 13);rgb(32, 150, 5);#2ed607" keyTimes="0;0.124;0.125;0.25;0.374;0.375;0.5;0.624;0.625;0.75;0.874;0.875;1" ng-attr-dur="{{config.speed}}s" repeatCount="indefinite" dur="1.6s"></animate>
+          </path>
+          <animateTransform attributeName="transform" type="scale" values="1 1;1 0;1 -1;1 1" keyTimes="0;0.5;0.999;1" ng-attr-dur="{{config.speed2}}s" repeatCount="indefinite" dur="0.4s"></animateTransform>
+        </g>
+      </g>
+    </g>
+  </svg>
