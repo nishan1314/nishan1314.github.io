@@ -71,7 +71,7 @@ input:disabled{
   display: inline-block;
   cursor: pointer;
   float:right;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .bar1, .bar2, .bar3 {
