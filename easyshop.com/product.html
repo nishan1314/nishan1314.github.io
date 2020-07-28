@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Single Product</title>
+<title>Product</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="OneTech shop project">
@@ -13,6 +13,12 @@
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="styles/product_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/product_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="plugins/slick-1.8.0/slick.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
 
 </head>
 
@@ -30,33 +36,16 @@
 			<div class="container">
 				<div class="row">
 					<div class="col d-flex flex-row">
-						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/phone.png" alt=""></div>+38 068 005 3570</div>
-						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/mail.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
+						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/phone.png" alt=""></div>+880 176 492 4719</div>
+						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/mail.png" alt=""></div><a href="mailto:info@easyshop.com">info@easyshop.com</a></div>
 						<div class="top_bar_content ml-auto">
 							<div class="top_bar_menu">
-								<ul class="standard_dropdown top_bar_dropdown">
-									<li>
-										<a href="#">English<i class="fas fa-chevron-down"></i></a>
-										<ul>
-											<li><a href="#">Italian</a></li>
-											<li><a href="#">Spanish</a></li>
-											<li><a href="#">Japanese</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">$ US dollar<i class="fas fa-chevron-down"></i></a>
-										<ul>
-											<li><a href="#">EUR Euro</a></li>
-											<li><a href="#">GBP British Pound</a></li>
-											<li><a href="#">JPY Japanese Yen</a></li>
-										</ul>
-									</li>
-								</ul>
+								
 							</div>
 							<div class="top_bar_user">
 								<div class="user_icon"><img src="images/user.svg" alt=""></div>
-								<div><a href="#">Register</a></div>
-								<div><a href="#">Sign in</a></div>
+								<div><a href="register.html">Register</a></div>
+								<div><a href="signin.html">Login</a></div>
 							</div>
 						</div>
 					</div>
@@ -73,7 +62,7 @@
 					<!-- Logo -->
 					<div class="col-lg-2 col-sm-3 col-3 order-1">
 						<div class="logo_container">
-							<div class="logo"><a href="#">OneTech</a></div>
+							<div class="logo"><a href="index.html"><img src="logo.png" style="max-height:60px;" alt="" /></a></div>
 						</div>
 					</div>
 
@@ -109,10 +98,9 @@
 					<div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
 						<div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
 							<div class="wishlist d-flex flex-row align-items-center justify-content-end">
-								<div class="wishlist_icon"><img src="images/heart.png" alt=""></div>
+								
 								<div class="wishlist_content">
-									<div class="wishlist_text"><a href="#">Wishlist</a></div>
-									<div class="wishlist_count">115</div>
+									
 								</div>
 							</div>
 
@@ -121,11 +109,11 @@
 								<div class="cart_container d-flex flex-row align-items-center justify-content-end">
 									<div class="cart_icon">
 										<img src="images/cart.png" alt="">
-										<div class="cart_count"><span>10</span></div>
+										<div class="cart_count"><span>0</span></div>
 									</div>
 									<div class="cart_content">
 										<div class="cart_text"><a href="#">Cart</a></div>
-										<div class="cart_price">$85</div>
+										<div class="cart_price">৳(0.00)</div>
 									</div>
 								</div>
 							</div>
@@ -134,7 +122,7 @@
 				</div>
 			</div>
 		</div>
-		
+	
 		<!-- Main Navigation -->
 
 		<nav class="main_nav">
@@ -145,7 +133,6 @@
 						<div class="main_nav_content d-flex flex-row">
 
 							<!-- Categories Menu -->
-
 							<div class="cat_menu_container">
 								<div class="cat_menu_title d-flex flex-row align-items-center justify-content-start">
 									<div class="cat_burger"><span></span><span></span><span></span></div>
@@ -153,94 +140,167 @@
 								</div>
 
 								<ul class="cat_menu">
-									<li><a href="#">Computers & Laptops <i class="fas fa-chevron-right ml-auto"></i></a></li>
-									<li><a href="#">Cameras & Photos<i class="fas fa-chevron-right"></i></a></li>
+									<li class="hassubs"><a href="#">Electronic Device<i class="fas fa-chevron-right"></i></a>
+											<ul>
+												<li><a href="#">Mobile<i class="fas fa-chevron-right"></i></a></li>
+												<li><a href="#">Tablets<i class="fas fa-chevron-right"></i></a></li>
+												<li><a href="#">Laptops<i class="fas fa-chevron-right"></i></a></li>
+												<li><a href="#">Desktop<i class="fas fa-chevron-right"></i></a></li>
+												<li><a href="#">Cameras<i class="fas fa-chevron-right"></i></a></li>
+											</ul>
+									</li>
 									<li class="hassubs">
-										<a href="#">Hardware<i class="fas fa-chevron-right"></i></a>
+										<a href="#">Electronic Accessories<i class="fas fa-chevron-right"></i></a>
 										<ul>
 											<li class="hassubs">
-												<a href="#">Menu Item<i class="fas fa-chevron-right"></i></a>
+												<a href="#">Mobile Accessories<i class="fas fa-chevron-right"></i></a>
 												<ul>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Phone Cases<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Power Bank<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Cables & Converter<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Wireless Charger<i class="fas fa-chevron-right"></i></a></li>
+													
 												</ul>
 											</li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+											<li class="hassubs"><a href="#">Audio<i class="fas fa-chevron-right"></i></a>
+												<ul>
+													<li><a href="#">Headphone & Headset<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Home Entertainment<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Blutooth Speakers<i class="fas fa-chevron-right"></i></a></li>
+												</ul>
+											</li>
+											<li class="hassubs"><a href="#">Wearable<i class="fas fa-chevron-right"></i></a>
+												<ul>
+													<li><a href="#">Smart Watches<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Virtual Reality<i class="fas fa-chevron-right"></i></a></li>
+												</ul>
+											</li>
+											<li class="hassubs"><a href="#">Camera Accessories<i class="fas fa-chevron-right"></i></a>
+												<ul>
+													<li><a href="#">Memory Card<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">DSLR Lens <i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Mirrorless Lens<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Tripods & Monopods<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Dry Box<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Batteries<i class="fas fa-chevron-right"></i></a></li>
+													
+												</ul>
+											</li>
+											<li class="hassubs"><a href="#">Storage<i class="fas fa-chevron-right"></i></a>
+												<ul>
+													<li><a href="#">External Drive<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Internal Drive<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Flash Drive<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">OTG Drive<i class="fas fa-chevron-right"></i></a></li>
+												</ul>
+											</li>
+											<li class="hassubs"><a href="#">Printer<i class="fas fa-chevron-right"></i></a>
+												<ul>
+													<li><a href="#">Printer<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">INC<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Printer Stands<i class="fas fa-chevron-right"></i></a></li>
+													
+												</ul>
+											</li>
+											<li class="hassubs"><a href="#">Network Components<i class="fas fa-chevron-right"></i></a>
+												<ul>
+													<li><a href="#">Acccess Point<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Modem<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Router<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Wireless USB Adapter<i class="fas fa-chevron-right"></i></a></li>
+													
+													
+												</ul>
+											</li>
 										</ul>
 									</li>
-									<li><a href="#">Smartphones & Tablets<i class="fas fa-chevron-right"></i></a></li>
-									<li><a href="#">TV & Audio<i class="fas fa-chevron-right"></i></a></li>
-									<li><a href="#">Gadgets<i class="fas fa-chevron-right"></i></a></li>
-									<li><a href="#">Car Electronics<i class="fas fa-chevron-right"></i></a></li>
-									<li><a href="#">Video Games & Consoles<i class="fas fa-chevron-right"></i></a></li>
-									<li><a href="#">Accessories<i class="fas fa-chevron-right"></i></a></li>
+									
+									<li class="hassubs"><a href="#">TV & Home applience<i class="fas fa-chevron-right"></i></a>
+										<ul>
+											<li><a href="#">Television<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Home Audio<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Cooling Heating<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Vaccums & Floor<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Water Purify<i class="fas fa-chevron-right"></i></a></li>
+													
+										</ul>
+									</li>
+									<li class="hassubs"><a href="#">Babies & Toys<i class="fas fa-chevron-right"></i></a>
+										<ul>
+											<li><a href="#">Mother & Baby<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Feeding<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Baby Gear<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Clothing<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Toys & Games<i class="fas fa-chevron-right"></i></a></li>
+													
+										</ul>
+									</li>
+									<li class="hassubs"><a href="#">Health & Beauty<i class="fas fa-chevron-right"></i></a>
+										<ul>
+											<li><a href="#">Bath Body<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Beauty Tools<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Fragnances<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Men's Care<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Skin Care<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Food Supliments<i class="fas fa-chevron-right"></i></a></li>
+													
+										</ul>
+									</li>
+									<li><a href="#">Groceries & Pets<i class="fas fa-chevron-right"></i></a></li>
+									<li class="hassubs"><a href="#">Women's Fashion<i class="fas fa-chevron-right"></i></a>
+										<ul>
+											<li><a href="#">Traditional Clothing<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Saree<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Wedding Wear<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Kurties<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Women's Bag<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Shoes<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Accoceries<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Travel & Lugges<i class="fas fa-chevron-right"></i></a></li>
+													
+										</ul>
+									</li>
+									<li class="hassubs"><a href="#">Men's Fashion<i class="fas fa-chevron-right"></i></a>
+										<ul>
+											<li><a href="#">T-shirt<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Shirt<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Punjabi & Katua<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Polo Shirts<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Jeans<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Pant<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Accoceries<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Shoes<i class="fas fa-chevron-right"></i></a></li>
+													
+										</ul>
+									</li>
+									<li class="hassubs"><a href="#">Sports & Outdoors<i class="fas fa-chevron-right"></i></a>
+										<ul>
+											<li><a href="#">Trednills<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Dumbbels<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Cycling<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Racket Sports<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Camping & Hicking<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Outdoor Recreation<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Cricket Sports<i class="fas fa-chevron-right"></i></a></li>
+											<li><a href="#">Fanshop<i class="fas fa-chevron-right"></i></a></li>
+													
+										</ul>
+									</li>
+									
+									
 								</ul>
 							</div>
+
 
 							<!-- Main Nav Menu -->
 
-							<div class="main_nav_menu ml-auto">
-								<ul class="standard_dropdown main_nav_dropdown">
-									<li><a href="index.html">Home<i class="fas fa-chevron-down"></i></a></li>
-									<li class="hassubs">
-										<a href="#">Super Deals<i class="fas fa-chevron-down"></i></a>
-										<ul>
-											<li>
-												<a href="#">Menu Item<i class="fas fa-chevron-down"></i></a>
-												<ul>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-												</ul>
-											</li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-										</ul>
-									</li>
-									<li class="hassubs">
-										<a href="#">Featured Brands<i class="fas fa-chevron-down"></i></a>
-										<ul>
-											<li>
-												<a href="#">Menu Item<i class="fas fa-chevron-down"></i></a>
-												<ul>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-												</ul>
-											</li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-										</ul>
-									</li>
-									<li class="hassubs">
-										<a href="#">Pages<i class="fas fa-chevron-down"></i></a>
-										<ul>
-											<li><a href="shop.html">Shop<i class="fas fa-chevron-down"></i></a></li>
-											<li><a href="product.html">Product<i class="fas fa-chevron-down"></i></a></li>
-											<li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
-											<li><a href="blog_single.html">Blog Post<i class="fas fa-chevron-down"></i></a></li>
-											<li><a href="regular.html">Regular Post<i class="fas fa-chevron-down"></i></a></li>
-											<li><a href="cart.html">Cart<i class="fas fa-chevron-down"></i></a></li>
-											<li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
-										</ul>
-									</li>
-									<li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
-									<li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
-								</ul>
-							</div>
-
+							
 							<!-- Menu Trigger -->
 
 							<div class="menu_trigger_container ml-auto">
 								<div class="menu_trigger d-flex flex-row align-items-center justify-content-end">
 									<div class="menu_burger">
-										<div class="menu_trigger_text">menu</div>
+										<div class="menu_trigger_text"></div>
 										<div class="cat_burger menu_burger_inner"><span></span><span></span><span></span></div>
 									</div>
 								</div>
@@ -266,71 +326,16 @@
 									<input type="search" required="required" class="page_menu_search_input" placeholder="Search for products...">
 								</form>
 							</div>
-							<ul class="page_menu_nav">
-								<li class="page_menu_item has-children">
-									<a href="#">Language<i class="fa fa-angle-down"></i></a>
-									<ul class="page_menu_selection">
-										<li><a href="#">English<i class="fa fa-angle-down"></i></a></li>
-										<li><a href="#">Italian<i class="fa fa-angle-down"></i></a></li>
-										<li><a href="#">Spanish<i class="fa fa-angle-down"></i></a></li>
-										<li><a href="#">Japanese<i class="fa fa-angle-down"></i></a></li>
-									</ul>
-								</li>
-								<li class="page_menu_item has-children">
-									<a href="#">Currency<i class="fa fa-angle-down"></i></a>
-									<ul class="page_menu_selection">
-										<li><a href="#">US Dollar<i class="fa fa-angle-down"></i></a></li>
-										<li><a href="#">EUR Euro<i class="fa fa-angle-down"></i></a></li>
-										<li><a href="#">GBP British Pound<i class="fa fa-angle-down"></i></a></li>
-										<li><a href="#">JPY Japanese Yen<i class="fa fa-angle-down"></i></a></li>
-									</ul>
-								</li>
-								<li class="page_menu_item">
-									<a href="#">Home<i class="fa fa-angle-down"></i></a>
-								</li>
-								<li class="page_menu_item has-children">
-									<a href="#">Super Deals<i class="fa fa-angle-down"></i></a>
-									<ul class="page_menu_selection">
-										<li><a href="#">Super Deals<i class="fa fa-angle-down"></i></a></li>
-										<li class="page_menu_item has-children">
-											<a href="#">Menu Item<i class="fa fa-angle-down"></i></a>
-											<ul class="page_menu_selection">
-												<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-												<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-												<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-												<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-											</ul>
-										</li>
-										<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-										<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-										<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-									</ul>
-								</li>
-								<li class="page_menu_item has-children">
-									<a href="#">Featured Brands<i class="fa fa-angle-down"></i></a>
-									<ul class="page_menu_selection">
-										<li><a href="#">Featured Brands<i class="fa fa-angle-down"></i></a></li>
-										<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-										<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-										<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-									</ul>
-								</li>
-								<li class="page_menu_item has-children">
-									<a href="#">Trending Styles<i class="fa fa-angle-down"></i></a>
-									<ul class="page_menu_selection">
-										<li><a href="#">Trending Styles<i class="fa fa-angle-down"></i></a></li>
-										<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-										<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-										<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-									</ul>
-								</li>
-								<li class="page_menu_item"><a href="blog.html">blog<i class="fa fa-angle-down"></i></a></li>
-								<li class="page_menu_item"><a href="contact.html">contact<i class="fa fa-angle-down"></i></a></li>
-							</ul>
+							
 							
 							<div class="menu_contact">
-								<div class="menu_contact_item"><div class="menu_contact_icon"><img src="images/phone_white.png" alt=""></div>+38 068 005 3570</div>
-								<div class="menu_contact_item"><div class="menu_contact_icon"><img src="images/mail_white.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
+								
+							
+								<span style="display: flex;">
+								<div style="margin-right: 10px;"><a href="register.html" style="color:white; text-decoration: none;">Register</a></div>
+								<span style="color:white">|</span>
+								<div style="margin-left: 10px;"><a href="signin.html" style="color:white;text-decoration: none">Sign in</a></div>
+								</span>
 							</div>
 						</div>
 					</div>
@@ -342,31 +347,32 @@
 
 	<!-- Single Product -->
 
-	<div class="single_product">
+	<div class="single_product" style="margin-top: -60px;">
 		<div class="container">
 			<div class="row">
 
 				<!-- Images -->
 				<div class="col-lg-2 order-lg-1 order-2">
 					<ul class="image_list">
-						<li data-image="images/single_4.jpg"><img src="images/single_4.jpg" alt=""></li>
-						<li data-image="images/single_2.jpg"><img src="images/single_2.jpg" alt=""></li>
-						<li data-image="images/single_3.jpg"><img src="images/single_3.jpg" alt=""></li>
+						<li data-image="images/cat_8.jpg"><img src="images/cat_8.jpg" alt=""></li>
+						<li data-image="image/cat_6.jpg"><img src="image/cat_6.jpg" alt=""></li>
+						<li data-image="image/cat_5.jpg"><img src="image/cat_5.jpg" alt=""></li>
 					</ul>
 				</div>
 
 				<!-- Selected Image -->
 				<div class="col-lg-5 order-lg-2 order-1">
-					<div class="image_selected"><img src="images/single_4.jpg" alt=""></div>
+					<div class="image_selected"><img src="images/cat_8.jpg" alt="" ></div>
 				</div>
 
 				<!-- Description -->
 				<div class="col-lg-5 order-3">
 					<div class="product_description">
-						<div class="product_category">Laptops</div>
-						<div class="product_name">MacBook Air 13</div>
+						<div class="product_category">Mans Fashion</div>
+						<div class="product_name">Easy Polo T-shirt For Man</div>
 						<div class="rating_r rating_r_4 product_rating"><i></i><i></i><i></i><i></i><i></i></div>
-						<div class="product_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum. laoreet turpis, nec sollicitudin dolor cursus at. Maecenas aliquet, dolor a faucibus efficitur, nisi tellus cursus urna, eget dictum lacus turpis.</p></div>
+						<div class="product_text"><p>Easy committed to provide intense quality t-shirts. Our fabric is 100% organic cotton, so it is very much safe for the sensitive skins. Our print quality is better than other brand, because we always try to satisfy the customer for our future. We always believe that our business is not for one day. We always try to make the customers happy after wearing our t-shirts.</p></div>
+						<div class="product_text"><p>Availibility:&nbsp&nbsp<span style="color:#63B72B;">In Stock</span></p></div>
 						<div class="order_info d-flex flex-row">
 							<form action="#">
 								<div class="clearfix" style="z-index: 1000;">
@@ -382,25 +388,13 @@
 									</div>
 
 									<!-- Product Color -->
-									<ul class="product_color">
-										<li>
-											<span>Color: </span>
-											<div class="color_mark_container"><div id="selected_color" class="color_mark"></div></div>
-											<div class="color_dropdown_button"><i class="fas fa-chevron-down"></i></div>
-
-											<ul class="color_list">
-												<li><div class="color_mark" style="background: #999999;"></div></li>
-												<li><div class="color_mark" style="background: #b19c83;"></div></li>
-												<li><div class="color_mark" style="background: #000000;"></div></li>
-											</ul>
-										</li>
-									</ul>
-
+									
 								</div>
 
-								<div class="product_price">$2000</div>
+								<div class="product_price"><span style="font-size: 20px; font-weight: bold;">৳560</span></div>
 								<div class="button_container">
-									<button type="button" class="button cart_button">Add to Cart</button>
+									<button type="button" class="button cart_button" style="background-color: #2E2E54;">Add to Cart</button>
+									<button type="button" class="button cart_button" style="background-color: #F46623;">Buy Now</button>
 									<div class="product_fav"><i class="fas fa-heart"></i></div>
 								</div>
 								
@@ -413,17 +407,428 @@
 		</div>
 	</div>
 
+<!--================Product Description Area =================-->
+    <section class="product_description_area" style="margin-top: -30px;">
+      <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="home-tab"
+              data-toggle="tab"
+              href="#home"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+              >Description</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="profile-tab"
+              data-toggle="tab"
+              href="#profile"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+              >Specification</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="contact-tab"
+              data-toggle="tab"
+              href="#contact"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+              >Comments</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              id="review-tab"
+              data-toggle="tab"
+              href="#review"
+              role="tab"
+              aria-controls="review"
+              aria-selected="false"
+              >Reviews</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            
+            <p>
+          Easy committed to provide intense quality t-shirts. Our fabric is 100% organic cotton, so it is very much safe for the sensitive skins. Our print quality is better than other brand, because we always try to satisfy the customer for our future. We always believe that our business is not for one day. We always try to make the customers happy after wearing our t-shirts.
+            </p>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <div class="table-responsive">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <h5> Brand:</h5>
+                    </td>
+                    <td>
+                      <h5>Easy</h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Product Type:</h5>
+                    </td>
+                    <td>
+                      <h5>Polo-Shirt</h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Color:</h5>
+                    </td>
+                    <td>
+                      <h5>-------</h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Main Material:</h5>
+                    </td>
+                    <td>
+                      <h5> Cotton</h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Quality checking</h5>
+                    </td>
+                    <td>
+                      <h5>yes</h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Gender:</h5>
+                    </td>
+                    <td>
+                      <h5>Male</h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>When packeting</h5>
+                    </td>
+                    <td>
+                      <h5>Without touch of hand</h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Each Box contains</h5>
+                    </td>
+                    <td>
+                      <h5>1pcs</h5>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="contact"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+          >
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="comment_list">
+                  <div class="review_item">
+                    <div class="media">
+                      <div class="d-flex">
+                        <img
+                          src="image/review-1.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="media-body">
+                        <h4>Blake Ruiz</h4>
+                        <h5>12th Feb, 2020 at 05:56 pm</h5>
+                        <a class="reply_btn" href="#">Reply</a>
+                      </div>
+                    </div>
+                    <p>
+                      I need XL size. Is it available?
+                    </p>
+                  </div>
+                  
+                  <div class="review_item">
+                    <div class="media">
+                      <div class="d-flex">
+                        <img
+                          src="image/review-1.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="media-body">
+                        <h4>Blake Ruiz</h4>
+                        <h5>25th march, 2020 at 05:10 pm</h5>
+                        <a class="reply_btn" href="#">Reply</a>
+                      </div>
+                    </div>
+                    <p>
+                      I dont like this color. Do you have other?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="review_box">
+                  <h4>Post a comment</h4>
+                  <form
+                    class="row contact_form"
+                    action="contact_process.php"
+                    method="post"
+                    id="contactForm"
+                    novalidate="novalidate"
+                  >
+                   
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          name="email"
+                          placeholder="Email Address"
+                        />
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea
+                          class="form-control"
+                          name="message"
+                          id="message"
+                          rows="1"
+                          placeholder="Message"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12 text-right">
+                      <button
+                        type="submit"
+                        value="submit"
+                        class="btn submit_btn"
+                      >
+                        Submit Now
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade show active"
+            id="review"
+            role="tabpanel"
+            aria-labelledby="review-tab"
+          >
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="row total_rate">
+                  <div class="col-6">
+                    <div class="box_total">
+                      <h5>Overall</h5>
+                      <h4 style="color:#F6B31D">4.4</h4>
+                      <h6>(03 Reviews)</h6>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="rating_list">
+                      <h3>Based on 3 Reviews</h3>
+                      <ul class="list">
+                        <li>
+                          <a href="#"
+                            >5 Star
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i> 04</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            >4 Star
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i> 06</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            >3 Star
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i> 01</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            >2 Star
+                      
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i> 01</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            >1 Star
+                           
+                            <i class="fa fa-star"></i> 01</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="review_list">
+                  <div class="review_item">
+                    <div class="media">
+                      <div class="d-flex">
+                        <img
+                          src="img/product/single-product/review-1.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="media-body">
+                        <h4>Blake Ruiz</h4>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                    <p>
+                      Very Comfortable T-shirt. I am Satisfied.Thank you Easyshop
+                    </p>
+                  </div>
+                  
+                 
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="review_box">
+                  <h4>Add a Review</h4>
+                  <p>Your Rating:</p>
+                  <ul class="list">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-star"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-star"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-star"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-star"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-star"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <p>Outstanding</p>
+                  <form
+                    class="row contact_form"
+                    action="contact_process.php"
+                    method="post"
+                    id="contactForm"
+                    novalidate="novalidate"
+                  >
+                    
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          name="email"
+                          placeholder="Email Address"
+                        />
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea
+                          class="form-control"
+                          name="message"
+                          id="message"
+                          rows="1"
+                          placeholder="Review"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12 text-right">
+                      <button
+                        type="submit"
+                        value="submit"
+                        class="btn submit_btn"
+
+                      >
+                        Submit Now
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 	<!-- Recently Viewed -->
 
-	<div class="viewed">
+	<div class="viewed" style="background-color: #FDFDFD; margin-top:-30px;">
 		<div class="container">
 			<div class="row">
 				<div class="col">
 					<div class="viewed_title_container">
 						<h3 class="viewed_title">Recently Viewed</h3>
 						<div class="viewed_nav_container">
-							<div class="viewed_nav viewed_prev"><i class="fas fa-chevron-left"></i></div>
-							<div class="viewed_nav viewed_next"><i class="fas fa-chevron-right"></i></div>
+							<div class="viewed_nav viewed_prev"><i class="fas fa-chevron-left" style="color:#A8952C;"></i></div>
+							<div class="viewed_nav viewed_next"><i class="fas fa-chevron-right" style="color:#A8952C;"></i></div>
 						</div>
 					</div>
 
@@ -436,7 +841,7 @@
 							<!-- Recently Viewed Item -->
 							<div class="owl-item">
 								<div class="viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
-									<div class="viewed_image"><img src="images/view_1.jpg" alt=""></div>
+									<div class="viewed_image"><img src="image/cat_11.jpg" alt=""></div>
 									<div class="viewed_content text-center">
 										<div class="viewed_price">$225<span>$300</span></div>
 										<div class="viewed_name"><a href="#">Beoplay H7</a></div>
@@ -446,12 +851,13 @@
 										<li class="item_mark item_new">new</li>
 									</ul>
 								</div>
+								
 							</div>
 
 							<!-- Recently Viewed Item -->
 							<div class="owl-item">
 								<div class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-									<div class="viewed_image"><img src="images/view_2.jpg" alt=""></div>
+									<div class="viewed_image"><img src="image/cat_13.jpg" alt=""></div>
 									<div class="viewed_content text-center">
 										<div class="viewed_price">$379</div>
 										<div class="viewed_name"><a href="#">LUNA Smartphone</a></div>
@@ -466,7 +872,7 @@
 							<!-- Recently Viewed Item -->
 							<div class="owl-item">
 								<div class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-									<div class="viewed_image"><img src="images/view_3.jpg" alt=""></div>
+									<div class="viewed_image"><img src="image/pro_21.jpg" alt=""></div>
 									<div class="viewed_content text-center">
 										<div class="viewed_price">$225</div>
 										<div class="viewed_name"><a href="#">Samsung J730F...</a></div>
@@ -481,7 +887,7 @@
 							<!-- Recently Viewed Item -->
 							<div class="owl-item">
 								<div class="viewed_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-									<div class="viewed_image"><img src="images/view_4.jpg" alt=""></div>
+									<div class="viewed_image"><img src="image/pro_22.jpg" alt=""></div>
 									<div class="viewed_content text-center">
 										<div class="viewed_price">$379</div>
 										<div class="viewed_name"><a href="#">Huawei MediaPad...</a></div>
@@ -496,7 +902,7 @@
 							<!-- Recently Viewed Item -->
 							<div class="owl-item">
 								<div class="viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
-									<div class="viewed_image"><img src="images/view_5.jpg" alt=""></div>
+									<div class="viewed_image"><img src="image/pro_23.jpg" alt=""></div>
 									<div class="viewed_content text-center">
 										<div class="viewed_price">$225<span>$300</span></div>
 										<div class="viewed_name"><a href="#">Sony PS4 Slim</a></div>
@@ -511,7 +917,7 @@
 							<!-- Recently Viewed Item -->
 							<div class="owl-item">
 								<div class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-									<div class="viewed_image"><img src="images/view_6.jpg" alt=""></div>
+									<div class="viewed_image"><img src="image/pro_15.jpg" alt=""></div>
 									<div class="viewed_content text-center">
 										<div class="viewed_price">$375</div>
 										<div class="viewed_name"><a href="#">Speedlink...</a></div>
@@ -617,15 +1023,14 @@
 
 				<div class="col-lg-3 offset-lg-2">
 					<div class="footer_column">
-						<div class="footer_title">Customer Care</div>
 						<ul class="footer_list">
 							<li><a href="#">My Account</a></li>
 							<li><a href="#">Order Tracking</a></li>
 							<li><a href="#">Wish List</a></li>
-							<li><a href="#">Customer Services</a></li>
-							<li><a href="#">Returns / Exchange</a></li>
+							<li><a href="contact.html">Customer Services</a></li>
+							<li><a href="#">Terms & Condition</a></li>
 							<li><a href="#">FAQs</a></li>
-							<li><a href="#">Product Support</a></li>
+							<li><a href="about.html">About Us</a></li>
 						</ul>
 					</div>
 				</div>
@@ -663,22 +1068,14 @@
 					
 					<div class="copyright_container d-flex flex-sm-row flex-column align-items-center justify-content-start">
 						<div class="copyright_content"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Developed by <a href="https://sbit.com.bd" target="_blank">Skill Based IT-SBIT</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </div>
-						<div class="logos ml-sm-auto">
-							<ul class="logos_list">
-								<li><a href="#"><img src="images/logos_1.png" alt=""></a></li>
-								<li><a href="#"><img src="images/logos_2.png" alt=""></a></li>
-								<li><a href="#"><img src="images/logos_3.png" alt=""></a></li>
-								<li><a href="#"><img src="images/logos_4.png" alt=""></a></li>
-							</ul>
-						</div>
+						
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 </div>
 
 <script src="js/jquery-3.3.1.min.js"></script>

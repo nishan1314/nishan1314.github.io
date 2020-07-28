@@ -1564,6 +1564,7 @@ select option
 	font-weight: 400;
 	line-height: 48px;
 	color: #FFFFFF;
+	background-color:#2E2E54;
 	padding-left: 35px;
 	padding-right: 35px;
 	outline: none;
@@ -1612,7 +1613,7 @@ select option
 {
 	padding-top: 51px;
 	padding-bottom: 60px;
-	background: #eff6fa;
+	
 }
 .viewed_title_container
 {
