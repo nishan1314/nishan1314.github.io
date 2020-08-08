@@ -1,0 +1,35 @@
+body {margin: 0;padding: 0;
+    cursor: url(images/9.png) 20 20,grab;
+    overflow: hidden;
+}
+
+.mainland {width: 100%;height: 100vh;user-select: none;}
+
+
+
+
+.bg {position:absolute;width: 100%;height: 100vh;z-index: -3;user-select: none;}
+
+
+
+
+.me img {position: absolute;bottom: 0;left: 10%;width: 15%;user-select: none;}
+
+.me5 {position: absolute;bottom: 0;left: 150%;width: 15%;user-select: none;}
+
+
+.they1 {padding:21px;position: absolute; width: 107px;top: 9%;left: 101%;z-index:1;
+ cursor: url(images/8.png) 20 20,grab;}
+
+.they2 {padding:21px;position: absolute; width: 107px;top: 14%;left: 101%;z-index:1; cursor: url(images/8.png) 20 20,grab;}
+
+.they3 {padding:21px;position: absolute; width: 107px;top: 3%;left: 101%;z-index:1; cursor: url(images/8.png) 20 20,grab;}
+
+.hidden {left: 10%;}
+
+
+.score {position: absolute;height: 20px;text-align: right; width: 200px;top:-3px;right: 9px;}
+
+.score h1 {font-size: 16px;color:black;}
+
+#start {position: absolute;top: 10%; left: 50%; padding: 20px 40px}

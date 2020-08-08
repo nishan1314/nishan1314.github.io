@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    
+     <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta charset="UTF-8">
+      <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+
+<style> 
+    .cant {font-size: 0px;}
+   
+   @media screen and (max-width:675px){
+    
+    .mainland{display: none;}
+    .cant {font-size: 30px; padding: 20px;}
+}
+    .score h1 {font-family: 'Baloo 2', cursive;}
+    #start {font-family: 'Baloo 2', cursive;}
+        </style>
+   
+<body>
+     
+        <audio id="aud10" src="images/10.mp3"></audio>
+        
+
+     <h4 class="cant">Sorry...  :( <br>This Page Cannot Be Loaded On Mobile Devices</h4>
+
+  
+  
+  <div  onclick="fire();"  class="mainland">
+  
+  
+<img class="bg" src="images/303630-1600x1200-01686_afternoonshadows_1600x1200.jpg">
+   
+   <button id="start" onclick="start111();">Click Here To Start</button>
+    
+    <div class="score">
+        <h1 id="score">Missed : 0 Score : 0 </h1>
+              
+    </div>
+
+      <div class="me">
+          <img id="me" src="images/me.png"></div>
+          
+            <div  class="me2">
+         <img class="me5"  id="me2" src="images/me2.png">
+      </div>
+
+<div class="theyy">
+  
+   <img onclick="hides1();" class="they1" id="they1" src="images/b.gif">
+   <img onclick="hides2();" class="they2" id="they2" src="images/b.gif">
+   <img onclick="hides3();" class="they3" id="they3" src="images/b.gif">
+     
+           </div>
+      
+  </div>
+
+<script>
+               
+const HIT10 = new Audio();
+HIT10.src = "images/10.mp3";
+        
+var objective = 100;
+
+        
+var p1= 101;
+var p2= 110;
+var p3= 120;
+    var moving;
+    
+    var moving2;
+    var moving3;
+        
+        var score=0;
+        var missed=0;
+      
+        
+    document.getElementById('they1').setAttribute('draggable', false);
+    document.getElementById('they2').setAttribute('draggable',false);
+
+     document.getElementById('they3').setAttribute('draggable', false);
+        
+           function fire() {
+               
+               
+               HIT10.load();
+               HIT10.play();
+           
+            var meee=document.querySelector("#me2");
+            meee.classList.add("hidden");
+               
+               setTimeout(hide2,60);
+     
+           }
+        
+     function hide2 (){
+          var meeee=document.querySelector("#me2");
+            meeee.classList.remove("hidden");
+             
+     }
+           
+        function hides1 (){
+                 
+            moving = document.createElement("img");
+            moving.style.position = "absolute";
+            moving.style.top = "10%";
+            moving.style.width = "100px";
+            moving.style.left = p1+2+"%";
+            moving.style.padding = "20px";
+           
+            
+             setTimeout(fall,35);
+            setTimeout(removes,800);
+             
+        
+
+            moving.setAttribute("src", "images/b.png");
+
+            document.body.appendChild(moving);
+            
+
+            
+            p1=p1+95;
+            var h11=document.querySelector("#they1");
+            h11.style.left= p1 +"%";
+            score=score+1;
+
+       
+        }
+        
+          function hides2 (){
+              
+            moving2 = document.createElement("img");
+            
+            moving2.style.position = "absolute";
+            moving2.style.top = "15%";
+            moving2.style.width = "100px";
+            moving2.style.left = p2+2+"%";
+            moving2.style.padding = "20px";
+           
+            
+            
+             setTimeout(fall2,35);
+            setTimeout(removes2,800);
+             
+        
+            
+
+            moving2.setAttribute("src", "images/b.png");
+
+            document.body.appendChild(moving2);
+            
+
+              
+               p2=p2+95;
+            var h22=document.querySelector("#they2");
+            h22.style.left=p2 +"%";
+               score=score+1;
+         
+            
+        }
+
+          function hides3 (){
+              
+              
+            moving3 = document.createElement("img");
+            moving3.style.left = p3+2+"%";
+            moving3.style.position = "absolute";
+            moving3.style.top = "4%";
+            moving3.style.width = "100px";
+            moving3.style.padding = "20px";
+            
+            setTimeout(fall3,35);
+            setTimeout(removes3,800);
+
+            moving3.setAttribute("src", "images/b.png");
+
+            document.body.appendChild(moving3);
+            
+
+               p3=p3+95;
+            var h33=document.querySelector("#they3");
+            h33.style.left=p3 +"%";
+               score=score+1;
+      
+        }
+
+           function start111 (){
+            setInterval(p11,40);
+               
+                var delet = document.getElementById("start");
+            delet.remove();
+               
+        }
+        
+         function p11 (){
+              
+             var ss=document.querySelector("#score").innerHTML="Missed : " + missed+ " Score : " + score;
+
+            p1=p1-1;
+            
+            var they11=document.querySelector("#they1");
+            they11.style.left= p1 + "%";
+             
+            
+            p2=p2-1;
+            
+            var they22=document.querySelector("#they2");
+            they22.style.left= p2 + "%";
+
+            
+            p3=p3-1;
+            
+            var they33=document.querySelector("#they3");
+            they33.style.left= p3 + "%";
+             
+    
+               
+            if (p1<-6){
+               
+                p1=101;
+                 var h11=document.querySelector("#they1");
+            h11.style.top= "9%";
+                missed=missed+1;
+    
+            }
+            else{};
+            
+             if (p2<-6){
+                p2=110;
+                   var h22=document.querySelector("#they2");
+            h22.style.top= "14%";
+                 missed=missed+1;
+      
+            }
+            else{};
+             if (p3<-6){
+                p3=120;
+                   var h33=document.querySelector("#they3");
+            h33.style.top= "3%";
+                 missed=missed+1;
+       
+            }
+            else{};
+             
+             
+             if (missed>=5){
+                 
+                 window.location.reload();
+                 
+                 
+                 
+                 alert("Game Over!!! You've missed 5 birds")
+             }
+      
+ 
+         }
+    
+
+    function fall(){
+        
+         moving.style.top = "70%";
+        moving.style.transition = ".9s";
+         moving.style.transform = "rotate(100deg)";
+   moving.style.width = "80px";
+         
+    }
+      function fall2(){
+        
+         moving2.style.top = "70%";
+          moving2.style.transition = ".9s";
+          moving2.style.width = "80px";
+
+          
+   
+          moving2.style.transform = "rotate(100deg)";
+
+    }
+      function fall3(){
+        
+         moving3.style.top = "70%";
+          moving3.style.transition = ".9s";
+            moving3.style.transform = "rotate(100deg)";
+           moving3.style.width = "80px";
+
+    }
+      
+    
+    function removes (){
+        
+        document.body.removeChild(moving);
+       
+    }
+     function removes2 (){
+        
+        document.body.removeChild(moving2);
+       
+    }
+     function removes3 (){
+        
+        document.body.removeChild(moving3);
+       
+    }
+
+    </script>
+
+</body>
+
+</html>
