@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
 		<link rel="shortcut icon" href="img/fav.png">
-		<!-- Author Meta -->
+		
 		<!-- Meta Description -->
 		<meta name="description" content="">
 		<!-- Meta Keyword -->
@@ -30,14 +30,14 @@
 			<link rel="stylesheet" href="css/main.css">
 		</head>
 		<body>	
-		 <header id="header" style="border-bottom: 1px dotted #ccc">
+		  <header id="header" style="border-bottom:1px dotted #ccc">
 		    <div class="container main-menu">
 		    	<div class="row align-items-center justify-content-between d-flex">
 			      <div id="logo">
 			        <a href="index.html"><img src="img/logo.png" style="max-width: 120px" alt="" title="" /></a>
 			      </div>
 			      <nav id="nav-menu-container">
-			       <ul class="nav-menu">
+			      <ul class="nav-menu">
 			          <li><a href="index.html">Home</a></li>
 			          <li><a href="services.html">Services</a></li>
 			          <li><a href="portfolio.html">My Project</a></li>
@@ -48,93 +48,122 @@
 			          <li><a href="contact.html">Contact</a></li>
 			          <li><a href="register.html">Login/Register</a></li>
 			        </ul>
-			      </nav><!-- #nav-menu-container -->		    		
+			        
+			      </nav>
+						    		
 		    	</div>
 		    </div>
 		  </header><!-- #header -->
-	  
+
 			<!-- start banner Area -->
-			<section class="relative about-banner" style="background-color:#F8C186 ">	
+			<section class="relative about-banner" id="home" style="background-color:#F8C186 ">	
 				<div class="overlay overlay-bg"></div>
 				<div class="container">				
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Contact Us				
+								Login/Register		
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html"> Contact Us</a></p>
+							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="elements.html"> Login/Register</a></p>
 						</div>	
 					</div>
 				</div>
 			</section>
-			<!-- End banner Area -->				  
+			<!-- End banner Area -->	
 
-			<!-- Start contact-page Area -->
-			<section class="contact-page-area section-gap">
+		
+			<!-- Start Align Area -->
+			<div class="whole-wrap">
 				<div class="container">
-					<div class="row">
-						<div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>
-						<div class="col-lg-4 d-flex flex-column address-wrap">
-							<div class="single-contact-address d-flex flex-row">
-								<div class="icon">
-									<span class="lnr lnr-home" style="color:#ccc"></span>
-								</div>
-								<div class="contact-details">
-									<h5>Railgate,Feni Sadar.</h5>
-									<p>
-										Feni,Bangladesh
-									</p>
-								</div>
-							</div>
-							<div class="single-contact-address d-flex flex-row">
-								<div class="icon">
-									<span class="lnr lnr-phone-handset" style="color:#ccc"></span>
-								</div>
-								<div class="contact-details">
-									<h5> (880) 176 492 4719</h5>
-									<h5> (880) 131 181 3872</h5>
-									<p>Mon to Fri 9am to 11pm</p>
-								</div>
-							</div>
-							<div class="single-contact-address d-flex flex-row">
-								<div class="icon">
-									<span class="lnr lnr-envelope" style="color:#ccc"></span>
-								</div>
-								<div class="contact-details">
-									<h5>nishandas655@gmail.com</h5>
-									<h5>nishandas555@yahoo.com</h5>
-
-									<p>Send me your query anytime!</p>
-								</div>
-							</div>														
-						</div>
-						<div class="col-lg-8">
-							<form class="form-area contact-form text-right" id="myForm" action="mail.php" method="post">
-								<div class="row">	
-									<div class="col-lg-6 form-group">
-										<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">
+					
+				
+					<div class="section-top-border">
+						<div class="row">
+							<div class="col-lg-8 col-md-8">
+								<h3 class="mb-30">Register</h3>
+								<form action="#">
+									<div class="mt-10">
+										<input type="text" name="first_name" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required class="single-input">
+									</div>
+									<div class="mt-10">
+										<input type="text" name="last_name" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required class="single-input">
+									</div>
 									
-										<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
-
-										<input name="subject" placeholder="Enter subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="common-input mb-20 form-control" required="" type="text">
+									<div class="mt-10">
+										<input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required class="single-input">
 									</div>
-									<div class="col-lg-6 form-group">
-										<textarea class="common-textarea form-control" name="message" placeholder="Enter Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Messege'" required=""></textarea>				
+									<div class="input-group-icon mt-10">
+										<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
+										<input type="text" name="address" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'" required class="single-input">
 									</div>
-									<div class="col-lg-12">
-										<div class="alert-msg" style="text-align: left;"></div>
-										<button class="genric-btn primary" style="float: right; background-color: #F59A83; color:white; border:none; outline: none;">Send Message</button>											
+									<div class="input-group-icon mt-10">
+										<div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
+										<div class="form-select" id="default-select">
+											<select>
+												<option value="1">City</option>
+												<option value="1">Dhaka</option>
+												<option value="1">Dilli</option>
+												<option value="1">Newyork</option>
+												<option value="1">Islamabad</option>
+											</select>
+										</div>
 									</div>
-								</div>
-							</form>	
+									<div class="input-group-icon mt-10">
+										<div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
+										<div class="form-select" id="default-select2">
+											<select>
+												<option value="1">Country</option>
+												<option value="1">Bangladesh</option>
+												<option value="1">India</option>
+												<option value="1">England</option>
+												<option value="1">Srilanka</option>
+											</select>
+										</div>
+									</div>
+									<br>
+									<div class="mt-10">
+										<button type="submit" style="border:none; outline: none; color:#fff;background-color: #FE9378; cursor: pointer; padding: 10px; "> Register</button>
+									</div>
+									
+								</form>
+							</div>
+							<div class="col-lg-3 col-md-4 mt-sm-30 element-wrap">
+							<h3 class="mb-30">Login</h3>
+								<form action="#">
+									<div class="mt-10">
+										<input type="text" name="email" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" required class="single-input">
+									</div>
+									<div class="mt-10">
+										<input type="phone" name="pnone" placeholder="phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'" required class="single-input">
+									</div>
+									
+									<div class="input-group-icon mt-10">
+										<div class="icon"><i class="fa fa-key" aria-hidden="true"></i></div>
+										<input type="password" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required class="single-input">
+									</div>
+									
+									
+									<br>
+									<div class="mt-10">
+										<a href="">Forgot Password?</a>
+										<button type="submit" style="border:none; outline: none; color:#fff;background-color: #FE9378; cursor: pointer; padding: 10px; float: right;"> Login</button>
+									</div>
+									
+								</form>	
+									
+									
+									
+							
+							
+							</div>
 						</div>
 					</div>
-				</div>	
-			</section>
-			<!-- End contact-page Area -->
+				</div>
+			</div>
+			<!-- End Align Area -->
 
             <!-- start footer Area -->
-            	<footer class="footer-area" style="padding:15px;background-color:#262626">
+            <footer class="footer-area" style="padding:15px;background-color:#262626">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-6 col-sm-6 mt-3">
