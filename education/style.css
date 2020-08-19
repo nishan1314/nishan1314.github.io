@@ -325,32 +325,20 @@ textarea:focus {
   display: inline-block;
   min-width: 160px;
   height: 40px;
-  background-color: #1F3A93;
+  background-color:#EF1C25;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 14px;
   color: #ffffff;
-  border: 1px solid transparent;
+  
   border-radius: 6px;
   padding: 0 30px;
   line-height: 40px;
   text-align: center;
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms; }
-  .clever-btn.active, .clever-btn:hover, .clever-btn:focus {
-    font-size: 14px;
-    font-weight: 600;
-    color: #ffffff;
-    background-color: #2c56df; }
-  .clever-btn.btn-2 {
-    background-color: transparent;
-    border: 1px solid #ebebeb;
-    color: rgba(0, 0, 0, 0.25); }
-    .clever-btn.btn-2:hover, .clever-btn.btn-2:focus {
-      color: #ffffff;
-      background-color: #2c56df;
-      border: 1px solid #2c56df; }
+  
 
 /* :: 4.0 Header Area */
 .header-area {
@@ -362,7 +350,7 @@ textarea:focus {
   z-index: 1;
   width: 100%;
   height: 40px;
-  background-color: #1F3A93;
+  background-color: #29AC66;
   border-bottom: 1px solid #ebebeb; }
   .top-header-area .contact-info {
     position: relative;
@@ -378,7 +366,7 @@ textarea:focus {
       .top-header-area .contact-info a span {
         text-transform: uppercase; }
       .top-header-area .contact-info a:hover, .top-header-area .contact-info a:focus {
-        color: #1b1b1b; }
+        color: #fff; }
       @media only screen and (max-width: 767px) {
         .top-header-area .contact-info a {
           padding: 0 10px;
@@ -401,7 +389,7 @@ textarea:focus {
       height: 40px;
       padding: 0 20px;
       line-height: 40px;
-      color:#EEEEEE;
+      color:#fff;
       font-size: 12px;
       text-transform: uppercase; }
     .top-header-area .follow-us a {
@@ -409,7 +397,7 @@ textarea:focus {
       height: 40px;
       padding: 0 20px;
       line-height: 40px;
-      color:#EEEEEE;
+      color:#fff;
       font-size: 12px;
       border-left: 1px solid #ebebeb; }
       .top-header-area .follow-us a span {
@@ -449,7 +437,6 @@ textarea:focus {
       width: 230px;
       height: 40px;
       margin: 0 50px; }
-
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .clever-main-menu .search-area form {
           width: 170px;
@@ -1535,8 +1522,7 @@ textarea:focus {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 165px;
     flex: 0 0 165px;
-    width: 165px;
-    max-width: 165px;
+    width:100%;
     height: 100px;
     text-align: center;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
@@ -1553,7 +1539,7 @@ textarea:focus {
     .blog-catagories .single-catagories h6 {
       font-size: 14px;
       margin-bottom: 0;
-      color: #3762f0;
+      color: #26B36E;
       text-transform: uppercase;
       letter-spacing: 0.75px;
       line-height: 1.9;
