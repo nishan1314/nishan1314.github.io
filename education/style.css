@@ -1715,14 +1715,14 @@ textarea:focus {
     top: 0;
     left: 0;
     content: '';
-    background-color: rgba(215, 224, 252, 0.9);
+    background-color: rgba(64, 203, 145, 0.9);
     z-index: -1; }
   .clever-catagory h3 {
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 0.75px;
-    color: #3762f0;
+    color: #fff;
     margin-bottom: 0; }
     @media only screen and (max-width: 767px) {
       .clever-catagory h3 {
