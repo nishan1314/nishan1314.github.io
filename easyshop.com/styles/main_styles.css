@@ -495,6 +495,7 @@ section
 .header_main
 {
 	z-index: 1;
+	
 }
 .header.scrolled .header_main
 {@media only screen and (max-width: 991px)
@@ -512,7 +513,7 @@ section
 }
 .logo_container
 {
-	height: 175px;
+	height: 100px;
 }
 .logo
 {
@@ -531,7 +532,7 @@ section
 }
 .header_search
 {
-	height: 175px;
+	height: 100px;
 }
 .header_search_content
 {
@@ -741,7 +742,7 @@ select option
 }
 .wishlist_cart
 {
-	height: 175px;
+	height: 100px;
 }
 .wishlist
 {
