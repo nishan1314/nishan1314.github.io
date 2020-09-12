@@ -58,15 +58,15 @@ Version: 1.0
      margin: 0;
      padding: 0;
 }
- .btn-primary{
+ .btn-some{
      background: #00C2CB;
-     
+     color:#fff;
      border:none;
      outline:none;
 }
-.btn-primary:hover{
+.btn-some:hover{
      color: #ffffff;
-     background-color: #262626;
+     background-color:#262626;
 }
 
 
@@ -82,7 +82,7 @@ Version: 1.0
      background-color: #262626;
      
 }
- .text-gold {
+ .text-dim {
      color: #00C2CB;
 }
  .btn-outline-gold {
