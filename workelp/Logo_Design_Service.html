@@ -7,9 +7,14 @@
       <meta name="author" content="Gurdeep singh osahan">
       <title>Workelp-logo design</title>
       <!-- Favicon Icon -->
-      <link rel="icon" type="image/png" href="images/favicon.png">
+       <link rel="icon" type="image/png" href="images/favicon.png">
       <!-- Bootstrap core CSS -->
-      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+      <!-- Bootstrap core CSS -->
+     
       <!-- Font Awesome-->
       <link href="vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
       <!-- Material Design Icons -->
@@ -21,16 +26,88 @@
       <!-- Select2 CSS -->
       <link href="vendor/select2/css/select2-bootstrap.css" />
       <link href="vendor/select2/css/select2.min.css" rel="stylesheet">
-      <!-- Custom styles for this template -->
-      <link href="css/style.css" rel="stylesheet">
+  
+     <link rel="stylesheet" href="css/style.css"/>
+     <link rel="stylesheet" href="css/style2.css"/>
    </head>
    <body>
-      <nav class="navbar navbar-expand-lg navbar-light topbar static-top shadow-sm bg-white osahan-nav-top px-0">
+      <nav id="main" class="fixed-top bg-white">
+      <div class="responsive-nav navbar navbar-light">
+        <div>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+         
+         <div class="icon d-lg-none d-sm-block" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="opneSideNav()" style=" outline:none; float: right;">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+       </div>
+        
+        <div>
+          <a class="navbar-brand" href="index.html"><img style="height: 38px;" src="images/workhelp.png" alt="logo"></a>
+        </div>
+        <div>
+          
+            <a href="register.html" type="button" class="btn btn-outline-primary">Join</a>
+          
+        </div>
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+        <a href="login.html">Sign in</a>
+       
+        <div class="dropdown">
+          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Browse Category
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="explore.html">Graphics Design</a>
+            <a class="dropdown-item" href="explore.html">Digital Marketing</a>
+            <a class="dropdown-item" href="explore.html">Writting & Translation</a>
+            <a class="dropdown-item" href="explore.html">Video and Animation</a>
+            <a class="dropdown-item" href="explore.html">Music & Audio</a>
+            <a class="dropdown-item" href="explore.html">Programming and Tech</a>
+            <a class="dropdown-item" href="explore.html">Business</a>
+            <a class="dropdown-item" href="explore.html">Lifestyle</a>
+          </div>
+        </div>
+        <a href="#">Workelp Pro</a>
+        <a href="#">Business</a>
+        <a href="#">Home</a>
+        <a href="#">$USD</a>
+        <a href="#">English</a>
+
+        <!-- <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul> -->
+      </div>
+    </nav>
+      <!-- Navigation -->
+   <nav class="navbar  navbarHide navbar-expand-lg navbar-light topbar static-top shadow-sm bg-white osahan-nav-top px-0">
          <div class="container-fluid">
             <!-- Sidebar Toggle (Topbar) -->
-            <a class="navbar-brand" href="index.html"><img src="images/workhelp.png"  alt=""></a>
+            <a class="navbar-brand" href="index3.html"><img src="images/workhelp.png"  alt=""></a>
             <!-- Topbar Search -->
-            <form class="d-none d-sm-inline-block form-inline mr-auto my-2 my-md-0 mw-100 navbar-search">
+            <form class="d-none d-sm-inline-block form-inline mr-auto my-2 my-md-0 mw-100 navbar-src">
                <div class="input-group">
                  <input class="form-control" type="search" placeholder="Find Services" aria-label="Search" style=" outline:none;  border-radius: 0px; width: 300px">
                   <div class="input-group-append">
@@ -43,78 +120,63 @@
             <!-- Topbar Navbar -->
             <ul class="navbar-nav align-items-center ml-auto">
                
-      <li class="nav-item active">
-        <a class="nav-link" href="workelp_pro.html">Workelp Pro <span class="sr-only">(current)</span></a>
+      <li class="nav-item ">
+         <a class="nav-link-ok" href="workelp_pro.html">Workelp Pro <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+         <a class="nav-link-ok" href="#">English<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">English</a>
+         <a class="nav-link-ok" href="#">USD<span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link" href="#">$USD</a>
-       
+      <li class="nav-item mr-2">
+         <a class="nav-link-ok" href="become_a_seller.html">Become a Seller <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="become_a_seller.html">Become a Seller</a>
+      <li class="nav-item ">
+          <a href="register.html" type="button" class="btn btn-outline-primary">Join</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="login.html">Sign In</a>
-      </li>
-      <li class="nav-item">
-        <a href="register.html" type="button" class="btn btn-outline-primary">Join</a>
-      </li>
+     
       
             </ul>
          </div>
       </nav>
-      <!-- Navigation -->
 
-
-
-
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-white osahan-nav-mid px-0 border-top shadow-sm">
+<nav class="navbar navbarHide navbar-expand-lg navbar-light bg-white osahan-nav-mid px-0 border-top shadow-sm py-3">
          <div class="container-fluid">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
+            
             <div class="collapse navbar-collapse" id="navbarResponsive">
                <ul class="navbar-nav">
                   <li class="nav-item">
-                     <a class="nav-link" href="explore.html">Graphics Design</a>
-
+                     <a class="nav-link-ok" href="#">Graphics Design</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Digital Marketingt</a>
+                     <a class="nav-link-ok" href="about.html">Digital Marketingt</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Writting & Translation</a>
+                     <a class="nav-link-ok" href="contact.html">Writting & Translation</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Video & Animation</a>
+                     <a class="nav-link-ok" href="contact.html">Video & Animation</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Music & Audio</a>
+                     <a class="nav-link-ok" href="contact.html">Music & Audio</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Programming & Tech</a>
+                     <a class="nav-link-ok" href="contact.html">Programming & Tech</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Buisness</a>
+                     <a class="nav-link-ok" href="contact.html">Buisness</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Lifestyle</a>
+                     <a class="nav-link-ok" href="contact.html">Lifestyle</a>
                   </li>
-
-
-
-
 
                </ul>
             </div>
             
          </div>
       </nav>
-
+<br class="d-lg-none d-sm-block"><br class="d-lg-none d-sm-block"><br class="d-lg-none d-sm-block">
 
 
 
@@ -910,7 +972,8 @@
       <!--       footer-->
 
 
-      <!-- Bootstrap core JavaScript -->
+       <!-- Bootstrap core JavaScript -->
+      <script src="./js/app.js"></script>
       <script src="vendor/jquery/jquery.min.js"></script>
       <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <!-- Contact form JavaScript -->

@@ -6,10 +6,15 @@
       <meta name="description" content="Gurdeep singh osahan">
       <meta name="author" content="Gurdeep singh osahan">
       <title>Seller-Profile</title>
-      <!-- Favicon Icon -->
-      <link rel="icon" type="image/png" href="images/favicon.png">
+     <!-- Favicon Icon -->
+       <link rel="icon" type="image/png" href="images/favicon.png">
       <!-- Bootstrap core CSS -->
-      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+      <!-- Bootstrap core CSS -->
+     
       <!-- Font Awesome-->
       <link href="vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
       <!-- Material Design Icons -->
@@ -21,24 +26,116 @@
       <!-- Select2 CSS -->
       <link href="vendor/select2/css/select2-bootstrap.css" />
       <link href="vendor/select2/css/select2.min.css" rel="stylesheet">
-      <!-- Custom styles for this template -->
-      <link href="css/style.css" rel="stylesheet">
+  
+     <link rel="stylesheet" href="css/style.css"/>
+     <link rel="stylesheet" href="css/style2.css"/>
    </head>
    <body>
-      <!--    header -->
-      <nav class="navbar navbar-expand-lg navbar-light topbar static-top shadow-sm bg-white osahan-nav-top px-0">
-         <div class="container-fluid">
+      <nav id="main" class="fixed-top bg-white">
+      <div class="responsive-nav navbar navbar-light">
+        <div>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+         
+         <div class="icon d-lg-none d-sm-block" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="opneSideNav()" style=" outline:none; float: right;">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  </div>
+        
+    
+        </div>
+        
+        <div>
+          <a class="navbar-brand" href="index.html"><img style="height: 38px;" src="images/workhelp.png" alt="logo"></a>
+        </div><br>
+        <div>
+          <form class=" d-sm-inline-block form-inline mr-auto my-2 my-md-0 mw-100 navbar-src">
+               <div class="input-group">
+                 <input class="form-control" type="search" placeholder="Find Services" aria-label="Search" style=" outline:none;  border-radius: 0px;width: 350px">
+                  
+               </div>
+            </form>
           
+        </div>
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+        <img style="height:70px;width:70px; border-radius: 50%; margin-top: -50px; margin-left:25px;" src="images/user/s4.png" alt="logo">
+        <hr>
+         <a href="workelp_pro.html">Home</a>
+        <a href="workelp_pro.html">Inbox</a>
+        <a href="workelp_pro.html">Dashboard</a>
+        <a href="#">Saved</a>
+         <div class="dropdown">
+          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Browse Category
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="explore.html">Graphics Design</a>
+            <a class="dropdown-item" href="explore.html">Digital Marketing</a>
+            <a class="dropdown-item" href="explore.html">Writting & Translation</a>
+            <a class="dropdown-item" href="explore.html">Video and Animation</a>
+            <a class="dropdown-item" href="explore.html">Music & Audio</a>
+            <a class="dropdown-item" href="explore.html">Programming and Tech</a>
+            <a class="dropdown-item" href="explore.html">Business</a>
+            <a class="dropdown-item" href="explore.html">Lifestyle</a>
+          </div>
+        </div>
+         <a href="#">Workelp Pro</a>
+        <a href="#">Workelp Buisness</a>
+
+        <hr>
+         
+        <a href="#">Mangage Request</a>
+        <a href="#">Post a Request</a>
+        <a href="#">Manage Selles</a>
+        <hr>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+        <a href="#">English</a>
+        <a href="#">USD</a>
+        <a href="#">Open in app</a>
+
+
+        <!-- <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul> -->
+      </div>
+    </nav>
+  
+<nav class="navbar  navbarHide navbar-expand-lg navbar-light topbar static-top shadow-sm bg-white osahan-nav-top px-0">
+         <div class="container-fluid">
+            <!-- Sidebar Toggle (Topbar) -->
             <a class="navbar-brand" href="index3.html"><img src="images/workhelp.png"  alt=""></a>
+            <!-- Topbar Search -->
            
-            <ul class="navbar-nav align-items-left ml-auto">
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav align-items-center ml-auto">
                
-      <li class="nav-item active">
-         <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+         <a class="nav-link-ok" href="workelp_pro.html">Dashboard <span class="sr-only">(current)</span></a>
       </li>
-     
-      <li class="nav-item dropdown no-arrow no-caret mr-3 dropdown-notifications">
-                  <a class=" nav-link dropdown-toggle" id="navbarDropdownMessages" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       <li class="nav-item dropdown no-arrow no-caret  dropdown-notifications">
+                  <a class="nav-link-ok dropdown-toggle" id="navbarDropdownMessages" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      Messages
                   </a>
                   <div class="dropdown-menu dropdown-menu-right border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownMessages">
@@ -63,19 +160,64 @@
                      <a class="dropdown-item dropdown-notifications-footer" href="messages.html">Read All Messages</a>
                   </div>
                </li>
-
-               <li class="nav-item active">
-                  <a class="nav-link" href="#">Orders</a>
+      <li class="nav-item">
+         <a class="nav-link-ok" href="workelp_pro.html">Orders <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link-ok" href="workelp_pro.html">Gigs <span class="sr-only">(current)</span></a>
+      </li>
+       <li class="nav-item">
+         <a class="nav-link-ok" href="workelp_pro.html">Analytics<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link-ok" href="workelp_pro.html">Earnings <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown no-arrow no-caret mr-1 dropdown-user">
+                  <a class="nav-link-ok dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community</a>
+                  <div class="dropdown-menu dropdown-menu-right border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownUserImage">
+                     
+                     
+                     <a class="dropdown-item" href="#">
+                        <div class="dropdown-item-icon">
+                           
+                        </div>
+                        Events
+                     </a>
+                     <a class="dropdown-item" href="account.html">
+                        <div class="dropdown-item-icon">
+                          
+                        </div>
+                        Blog
+                     </a>
+                      <a class="dropdown-item" href="account.html">
+                        <div class="dropdown-item-icon">
+                          
+                        </div>
+                        Forum
+                     </a>
+                     
+                     <a class="dropdown-item" href="account.html">
+                        <div class="dropdown-item-icon">
+                          
+                        </div>
+                        Community Standars
+                     </a>
+                     <a class="dropdown-item" href="account.html">
+                        <div class="dropdown-item-icon">
+                          
+                        </div>
+                        PodCast
+                     </a>
+                    
+                  </div>
                </li>
-
-              
      
      
       <li class="nav-item dropdown no-arrow no-caret dropdown-user">
-                  <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-fluid" src="images/user/s7.png"></a>
+                  <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-fluid" src="images/user/s4.png"></a>
                   <div class="dropdown-menu dropdown-menu-right border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownUserImage">
                      <h6 class="dropdown-header d-flex align-items-center">
-                        <img class="dropdown-user-img" src="images/user/s7.png">
+                        <img class="dropdown-user-img" src="images/user/s4.png">
                         <div class="dropdown-user-details">
                            <div class="dropdown-user-details-name">Askbootstrap</div>
                            <div class="dropdown-user-details-email">iamosahan@gmail.com</div>
@@ -83,7 +225,7 @@
                         </div>
                      </h6>
                      <div class="dropdown-divider"></div>
-                     <a class="dropdown-item" href="#">
+                     <a class="dropdown-item" href="account.html">
                         <div class="dropdown-item-icon">
                            
                         </div>
@@ -134,12 +276,8 @@
          </div>
       </nav>
       <!-- Navigation -->
+<br class="d-lg-none d-sm-block"><br class="d-lg-none d-sm-block"><br class="d-lg-none d-sm-block">
 
-
-
-
-
-      
 
       <div class="main-page second py-5">
          <div class="container-fluid">
@@ -435,6 +573,7 @@
          </div>
       </footer>
       <!-- Bootstrap core JavaScript -->
+      <script src="./js/app.js"></script>
       <script src="vendor/jquery/jquery.min.js"></script>
       <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <!-- Contact form JavaScript -->

@@ -1,37 +1,9 @@
-/*
-Template Name: Miver - LMS & Freelance Services Marketplace for Businesses HTML Template
-Author: Askbootstrap
-Author URI: https://themeforest.net/user/askbootstrap
-Version: 1.0
-*/
-
-/*
--- Body
--- Extra CSS
--- Chat
--- Network Item
--- Filters
--- Start Header CSS
--- Start Home Page CSS
--- Popular
--- Services
--- About
--- Market Wrapper
--- Freelance Projects
--- Testimonials
--- Pro Section
--- Guide Wrapper
--- Get Started
--- Profile View CSS
--- Web Design List
--- Custom Checkbox
--- Toggle Switch
--- Responsive Design
-*/
 
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
 /* Body */
+
+
  body {
      color: #222325;
      font-size: 13px;
@@ -404,14 +376,7 @@ Version: 1.0
      -webkit-box-align: center;
      align-items: center;
 }
- .dropdown-menu .dropdown-item {
-     display: -webkit-box;
-     display: flex;
-     -webkit-box-align: center;
-     align-items: center;
-     padding: 6px 17px;
-     font-size: 14px;
-}
+ 
  .dropdown-menu .dropdown-item .dropdown-item-icon {
      margin-right: 0.5rem;
      line-height: 1;
@@ -425,7 +390,7 @@ Version: 1.0
 }
  .dropdown .dropdown-toggle {
      display: -webkit-inline-box;
-     display: inline-flex;
+     display: inline-block;
      -webkit-box-align: center;
      align-items: center;
 }
@@ -590,7 +555,7 @@ Version: 1.0
  .dropdown-notifications .dropdown-menu::-webkit-scrollbar-button {
      width: 0;
      height: 0;
-     display: none;
+     
 }
  .dropdown-notifications .dropdown-menu::-webkit-scrollbar-corner {
      background-color: transparent;
@@ -2855,7 +2820,7 @@ Version: 1.0
 /* web design */
 /* responsive design */
  @media(max-width:1024px) {
-     .sidenav, .submenu, .search a.green-btn, .third-menu, .main-page .breadcrumb {
+     .submenu, .search a.green-btn, .third-menu, .main-page .breadcrumb {
          display: none;
     }
      .review-section, .review-list {
@@ -2978,10 +2943,7 @@ Version: 1.0
      .osahan-nav-top, .osahan-nav-mid {
          padding: 9px 15px !important;
     }
-     .navbar-toggler {
-         border: none;
-         padding: 0px;
-    }
+     
      .osahan-nav-mid .nav-link {
          padding: 9px 10px !important;
     }
@@ -3000,6 +2962,7 @@ Version: 1.0
     }
      .osahan-nav-mid .navbar-collapse .navbar-nav .nav-link {
          padding: 10px 0px !important;
+    
     }
      .osahan-nav-mid .navbar-collapse .navbar-nav .dropdown-menu {
          position: static;
@@ -3095,10 +3058,7 @@ Version: 1.0
      .osahan-nav-top, .osahan-nav-mid {
          padding: 9px 15px !important;
     }
-     .navbar-toggler {
-         border: none;
-         padding: 0px;
-    }
+     
      .osahan-nav-mid .nav-link {
          padding: 9px 10px !important;
     }
@@ -3206,3 +3166,29 @@ Version: 1.0
 .s_product_text{margin-left:-15px;margin-top:65px}
 .s_product_text h3{font-size:24px;font-weight:500;color:#2a2a2a;margin-bottom:10px}
 
+.icon {
+  display: inline-block;
+  cursor: pointer;
+  float:right;
+  margin-top: 5px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: #757575;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
