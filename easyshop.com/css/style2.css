@@ -143,8 +143,8 @@ body{
     right: 0;
     background-color: white;
     overflow-x: hidden; 
-    padding-top: 60px; 
-    transition: 0.5s; 
+    padding-top: 20px; 
+    transition: 0.2s; 
   }
   .dropdown-menu{
       border: none !important;
