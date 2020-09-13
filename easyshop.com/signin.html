@@ -14,7 +14,7 @@
 <link rel="stylesheet" type="text/css" href="plugins/slick-1.8.0/slick.css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
-
+<link rel="stylesheet" href="css/style2.css"/>
 </head>
 
 <body>
@@ -32,15 +32,15 @@
         <div class="row">
           <div class="col d-flex flex-row">
             <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/phone.png" alt=""></div>+880 176 492 4719</div>
-            <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/mail.png" alt=""></div><a href="mailto:info@easyshop.com">info@easyshop.com</a></div>
+            <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/mail.png" alt=""></div><a href="mailto:fastsales@gmail.com">easyshop@gmail.com</a></div>
             <div class="top_bar_content ml-auto">
               <div class="top_bar_menu">
                 
               </div>
               <div class="top_bar_user">
                 <div class="user_icon"><img src="images/user.svg" alt=""></div>
-                <div><a href="register.html">Register</a></div>
-                <div><a href="signin.html">Login</a></div>
+                <div><a href="reg.html">Register</a></div>
+                <div><a href="signin.html">Sign in</a></div>
               </div>
             </div>
           </div>
@@ -50,14 +50,14 @@
 
     <!-- Header Main -->
 
-    <div class="header_main" style="box-shadow: 0px 2px 5px 0px #ccc">
+    <div class="header_main navbarHide" style=" box-shadow: 0px 2px 5px 0px #ccc" >
       <div class="container">
         <div class="row">
 
           <!-- Logo -->
           <div class="col-lg-2 col-sm-3 col-3 order-1">
             <div class="logo_container">
-              <div class="logo"><a href="index.html"><img src="logo.png" style="max-height:60px;" alt="" /></a></div>
+              <div class="logo"><a href="#"><img src="logo.png" style="max-height:60px;" alt="" /></a></div>
             </div>
           </div>
 
@@ -112,48 +112,104 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    <!-- Main Navigation -->
 
-    
-    <!-- Menu -->
-
-    <div class="page_menu">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            
-            <div class="page_menu_content">
-              
-              <div class="page_menu_search">
-                <form action="#">
-                  <input type="search" required="required" class="page_menu_search_input" placeholder="Search for products...">
-                </form>
-              </div>
-              
-              
-              <div class="menu_contact">
                 
-              
-                <span style="display: flex;">
-                <div style="margin-right: 10px;"><a href="register.html" style="color:white; text-decoration: none;">Register</a></div>
-                <span style="color:white">|</span>
-                <div style="margin-left: 10px;"><a href="signin.html" style="color:white;text-decoration: none">Sign in</a></div>
-                </span>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <nav id="main" class="fixed-top bg-white" style="box-shadow: 0px 2px 5px 0px #ccc">
+      <div class="responsive-nav navbar navbar-light">
+        <div>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+         
+         <div class="icon d-lg-none d-sm-block" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="opneSideNav()" style=" outline:none; float: right;">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+       </div>
+        
+        <div>
+         
+            <a class="navbar-brand" href="index.html"><img style="max-width: 120px;" src="logo.png" alt="logo"></a>
+        
+          
+        </div>
+        <div class="cart" style="padding-right: 10px" >
+      <div class="cart_container d-flex flex-row align-items-center justify-content-end">
+        <div class="cart_icon">
+          <img src="images/cart.png" alt="">
+          <div class="cart_count"><span>0</span></div>
+        </div>
+                  
+      </div>
+    </div>
+    
 
+      </div>
+      <div id="mySidenav" class="sidenav" >
+        <div>
+      <form class=" mr-auto my-2 my-md-0  navbar-src">
+               <div class="input-group">
+                 <input class="form-control" type="search" placeholder="Search for Products" aria-label="Search" style=" outline:none;  border-radius: 0px;">
+                  
+               </div>
+            </form>
+    </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+        
+        <div class="sticky">
+                     <ul class="nav nav-tabs">
+                        <li><a  class="active" data-toggle="tab" href="#basic">MENU</a></li>
+                        <li><a  data-toggle="tab" href="#standard">CATEGORIES</a></li>
+                        
+                     </ul>
+                     <div class="tab-content">
+                        <div id="basic" class="tab-pane fade show active">
+                          <div class="top_bar_user">
+                            <div><a href="signin.html">Login</a></div>
+                            <div><a href="register.html">Register</a></div>
+                
+                          </div>
+                           <ul class="list-group list-group-flush">
+                              
+                              <li class="list-group-item">HOME</li>
+                              <li class="list-group-item">WISHLIST</li>
+                              <li class="list-group-item">TRACK ORDER</li>
+                              <li class="list-group-item">ABOUT US</li>
+                              <li class="list-group-item">CONTACT US</li>
+                              <li class="list-group-item">FAQ</li>
+                            </ul>
+                        </div>
+                        <div id="standard" class="tab-pane fade">
+                           <ul class="list-group list-group-flush">
+                <li class="list-group-item">ELECTRONICS DEVICE</li>
+                <li class="list-group-item">MENS FASHION</li>
+                <li class="list-group-item">WOMENS FASHION</li>
+                <li class="list-group-item">HOME APPLIANCES</li>
+                <li class="list-group-item">BABIES & TOYS</li>
+                <li class="list-group-item">SPORTS & OUTDOOR</li>
+                <li class="list-group-item">HEALTH AND BEAUTY</li>
+                <li class="list-group-item">ACCEOSSERIES</li>
+                <li class="list-group-item">OTHER</li>
+               </ul>
+
+                        </div>
+                       
+                </div>
+                    
+          </div>
+      </div>
+    </nav>
+    
   </header>
-<br>  
+<br class="d-lg-none d-sm-block"><br class="d-lg-none d-sm-block">
+<br class="d-lg-none d-sm-block"><br class="d-lg-none d-sm-block">
+
+<br>
+
 <div class="container">
 <div class="row">
   <div class="col-lg-12 col-md-12 col-sm-12">
@@ -311,9 +367,9 @@
         <div class="col">
           
           <div class="copyright_container d-flex flex-sm-row flex-column align-items-center justify-content-start">
-            <div class="copyright_content"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Developed by <a href="https://sbit.com.bd" target="_blank">Skill Based IT-SBIT</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <div class="copyright_content">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Developed by <a href="https://sbit.com.bd" target="_blank">SBIT</a>
+
 </div>
             
           </div>
@@ -322,7 +378,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </div>
   </div>
 </div>
-
+<script src="./js/app.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>

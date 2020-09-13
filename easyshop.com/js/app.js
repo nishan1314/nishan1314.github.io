@@ -43,7 +43,13 @@ window.addEventListener('scroll', () =>{
 function opneSideNav(){
     document.getElementById("mySidenav").style.width = "250px";
 }
+function opneSideNavv(){
+    document.getElementById("mySidenavv").style.width = "250px";
+}
 
 function closeSideNav(){
     document.getElementById("mySidenav").style.width = "0px";
+}
+function closeSideNavv(){
+    document.getElementById("mySidenavv").style.width = "0px";
 }
