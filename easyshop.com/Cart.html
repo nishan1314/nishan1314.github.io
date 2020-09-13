@@ -322,7 +322,7 @@
 			</div>
 		</nav>
 		
-	<nav id="main" class="fixed-top bg-white" style="box-shadow: 0px 2px 5px 0px #ccc">
+	 <nav id="main" class="fixed-top bg-white" style="box-shadow: 0px 2px 5px 0px #ccc">
       <div class="responsive-nav navbar navbar-light">
         <div>
           <!-- <span class="navbar-toggler-icon"></span> -->
@@ -340,7 +340,7 @@
         
           
         </div>
-        <div class="cart" style="padding-right: 10px" >
+        <div class="cart" style="padding-right: 10px"  type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="opneSideNavv()" >
 			<div class="cart_container d-flex flex-row align-items-center justify-content-end">
 				<div class="cart_icon">
 					<img src="images/cart.png" alt="">
@@ -371,13 +371,8 @@
                      </ul>
                      <div class="tab-content">
                         <div id="basic" class="tab-pane fade show active">
-                        	<div class="top_bar_user">
-                        		<div><a href="signin.html">Login</a></div>
-								<div><a href="register.html">Register</a></div>
-								
-							</div>
                            <ul class="list-group list-group-flush">
-                           	  
+                           	  <li class="list-group-item">SIGN IN / REGISTER</li>
 							  <li class="list-group-item">HOME</li>
 							  <li class="list-group-item">WISHLIST</li>
 							  <li class="list-group-item">TRACK ORDER</li>
@@ -404,6 +399,11 @@
                 </div>
                     
           </div>
+      </div>
+      <div id="mySidenavv" class="sidenavv" >
+      	<a href="javascript:void(0)" class="closebtnn" onclick="closeSideNavv()">&times;</a>
+      	<h2 class="text-center text-muted">Cart Empty</h2><hr>
+       
       </div>
     </nav>
 		
