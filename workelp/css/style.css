@@ -1078,6 +1078,29 @@
      margin: 6px 0 32px;
 }
 /* get started */
+
+/* get started */
+ .get-startedd {
+     background-color: black;
+     background-size: cover;
+     text-align: center;
+     padding: 60px 0;
+}
+ .get-startedd .content {
+     z-index: 5;
+     padding: 0 24px;
+}
+ .get-startedd .content h2 {
+     font-size: 26px;
+     line-height: 38px;
+     font-weight: bold;
+     margin-bottom: 6px;
+}
+ .get-startedd .content p {
+     color: #62646a;
+     margin: 6px 0 32px;
+}
+/* get started */
 /* PV CSS */
  .home-logo {
      margin-right: 35px;
