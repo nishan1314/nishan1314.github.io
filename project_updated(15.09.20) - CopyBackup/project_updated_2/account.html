@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Gurdeep singh osahan">
+      <meta name="author" content="Gurdeep singh osahan">
+      <title>Seller-Profile</title>
+     <!-- Favicon Icon -->
+       <link rel="icon" type="image/png" href="images/favicon.png">
+      <!-- Bootstrap core CSS -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+      <!-- Bootstrap core CSS -->
+     
+      <!-- Font Awesome-->
+      <link href="vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+      <!-- Material Design Icons -->
+      <link href="vendor/icons/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css">
+      <!-- Slick -->
+      <link href="vendor/slick-master/slick/slick.css" rel="stylesheet" type="text/css">
+      <!-- Lightgallery -->
+      <link href="vendor/lightgallery-master/dist/css/lightgallery.min.css" rel="stylesheet">
+      <!-- Select2 CSS -->
+      <link href="vendor/select2/css/select2-bootstrap.css" />
+      <link href="vendor/select2/css/select2.min.css" rel="stylesheet">
+  
+     <link rel="stylesheet" href="css/style.css"/>
+     <link rel="stylesheet" href="css/style2.css"/>
+   </head>
+   <body>
+      <nav id="main" class="fixed-top bg-white">
+      <div class="responsive-nav navbar navbar-light">
+        <div>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+         
+         <div class="icon d-lg-none d-sm-block" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="opneSideNav()" style=" outline:none; float: right;">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  </div>
+        
+    
+        </div>
+        
+        <div>
+          <a class="navbar-brand" href="index.html"><img style="height: 38px;" src="images/workhelp.png" alt="logo"></a>
+        </div><br>
+        <div>
+          <form class=" d-sm-inline-block form-inline mr-auto my-2 my-md-0 mw-100 navbar-src">
+               <div class="input-group">
+                 <input class="form-control" type="search" placeholder="Find Services" aria-label="Search" style=" outline:none;  border-radius: 0px;width: 350px">
+                  
+               </div>
+            </form>
+          
+        </div>
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+        <img style="height:70px;width:70px; border-radius: 50%; margin-top: -50px; margin-left:25px;" src="images/user/s4.png" alt="logo">
+        <hr>
+         <a href="workelp_pro.html">Home</a>
+        <a href="workelp_pro.html">Inbox</a>
+        <a href="workelp_pro.html">Dashboard</a>
+        <a href="#">Saved</a>
+         <div class="dropdown">
+          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Browse Category
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="explore.html">Graphics Design</a>
+            <a class="dropdown-item" href="explore.html">Digital Marketing</a>
+            <a class="dropdown-item" href="explore.html">Writting & Translation</a>
+            <a class="dropdown-item" href="explore.html">Video and Animation</a>
+            <a class="dropdown-item" href="explore.html">Music & Audio</a>
+            <a class="dropdown-item" href="explore.html">Programming and Tech</a>
+            <a class="dropdown-item" href="explore.html">Business</a>
+            <a class="dropdown-item" href="explore.html">Lifestyle</a>
+          </div>
+        </div>
+         <a href="#">Workelp Pro</a>
+        <a href="#">Workelp Buisness</a>
+
+        <hr>
+         
+        <a href="#">Mangage Request</a>
+        <a href="#">Post a Request</a>
+        <a href="#">Manage Selles</a>
+        <hr>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+        <a href="#">English</a>
+        <a href="#">USD</a>
+        <a href="#">Open in app</a>
+
+
+        <!-- <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul> -->
+      </div>
+    </nav>
+  
+<nav class="navbar  navbarHide navbar-expand-lg navbar-light topbar static-top shadow-sm bg-white osahan-nav-top px-0">
+         <div class="container-fluid">
+            <!-- Sidebar Toggle (Topbar) -->
+            <a class="navbar-brand" href="index3.html"><img src="images/workhelp.png"  alt=""></a>
+            <!-- Topbar Search -->
+           
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav align-items-center ml-auto">
+               
+      <li class="nav-item">
+         <a class="nav-link-ok" href="workelp_pro.html">Dashboard <span class="sr-only">(current)</span></a>
+      </li>
+       <li class="nav-item dropdown no-arrow no-caret  dropdown-notifications">
+                  <a class="nav-link-ok dropdown-toggle" id="navbarDropdownMessages" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Messages
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownMessages">
+                     <h6 class="dropdown-header dropdown-notifications-header">
+                       
+                        Inbox
+                     </h6>
+                     <a class="dropdown-item dropdown-notifications-item" href="#">
+                        <img class="dropdown-notifications-item-img" src="images/user/s7.png">
+                        <div class="dropdown-notifications-item-content">
+                           <div class="dropdown-notifications-item-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                           <div class="dropdown-notifications-item-content-details">Emily Fowler · 58m</div>
+                        </div>
+                     </a>
+                     <a class="dropdown-item dropdown-notifications-item" href="#">
+                        <img class="dropdown-notifications-item-img" src="images/user/s7.png">
+                        <div class="dropdown-notifications-item-content">
+                           <div class="dropdown-notifications-item-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                           <div class="dropdown-notifications-item-content-details">Diane Chambers · 2d</div>
+                        </div>
+                     </a>
+                     <a class="dropdown-item dropdown-notifications-footer" href="messages.html">Read All Messages</a>
+                  </div>
+               </li>
+      <li class="nav-item">
+         <a class="nav-link-ok" href="workelp_pro.html">Orders <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link-ok" href="workelp_pro.html">Gigs <span class="sr-only">(current)</span></a>
+      </li>
+       <li class="nav-item">
+         <a class="nav-link-ok" href="workelp_pro.html">Analytics<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link-ok" href="workelp_pro.html">Earnings <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown no-arrow no-caret mr-1 dropdown-user">
+                  <a class="nav-link-ok dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community</a>
+                  <div class="dropdown-menu dropdown-menu-right border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownUserImage">
+                     
+                     
+                     <a class="dropdown-item" href="#">
+                        <div class="dropdown-item-icon">
+                           
+                        </div>
+                        Events
+                     </a>
+                     <a class="dropdown-item" href="account.html">
+                        <div class="dropdown-item-icon">
+                          
+                        </div>
+                        Blog
+                     </a>
+                      <a class="dropdown-item" href="account.html">
+                        <div class="dropdown-item-icon">
+                          
+                        </div>
+                        Forum
+                     </a>
+                     
+                     <a class="dropdown-item" href="account.html">
+                        <div class="dropdown-item-icon">
+                          
+                        </div>
+                        Community Standars
+                     </a>
+                     <a class="dropdown-item" href="account.html">
+                        <div class="dropdown-item-icon">
+                          
+                        </div>
+                        PodCast
+                     </a>
+                    
+                  </div>
+               </li>
+     
+     
+      <li class="nav-item dropdown no-arrow no-caret dropdown-user">
+                  <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-fluid" src="images/user/s4.png"></a>
+                  <div class="dropdown-menu dropdown-menu-right border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownUserImage">
+                     <h6 class="dropdown-header d-flex align-items-center">
+                        <img class="dropdown-user-img" src="images/user/s4.png">
+                        <div class="dropdown-user-details">
+                           <div class="dropdown-user-details-name">Askbootstrap</div>
+                           <div class="dropdown-user-details-email">iamosahan@gmail.com</div>
+
+                        </div>
+                     </h6>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="account.html">
+                        <div class="dropdown-item-icon">
+                           
+                        </div>
+                        Profile
+                     </a>
+                     <a class="dropdown-item" href="account.html">
+                        <div class="dropdown-item-icon">
+                          
+                        </div>
+                        Dashboard
+                     </a>
+                      <a class="dropdown-item" href="account.html">
+                        <div class="dropdown-item-icon">
+                          
+                        </div>
+                        Post a Request
+                     </a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="account.html">
+                        <div class="dropdown-item-icon">
+                          
+                        </div>
+                        Settings
+                     </a>
+                     <a class="dropdown-item" href="account.html">
+                        <div class="dropdown-item-icon">
+                          
+                        </div>
+                        English
+                     </a>
+                     <a class="dropdown-item" href="account.html">
+                        <div class="dropdown-item-icon">
+                          
+                        </div>
+                        Help & support
+                     </a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="#">
+                        <div class="dropdown-item-icon">
+                          
+                        </div>
+                        Logout
+                     </a>
+                  </div>
+               </li>
+      
+            </ul>
+         </div>
+      </nav>
+      <!-- Navigation -->
+<br class="d-lg-none d-sm-block"><br class="d-lg-none d-sm-block"><br class="d-lg-none d-sm-block">
+
+
+      <div class="main-page second py-5">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-4 left">
+                  <div class="profile_info">
+                     <div class="seller-card">
+                        <div>
+                           <div class="user-online-indicator is-online " data-user-id="1152855">
+                              <i class="fa fa-circle"></i>online
+                           </div>
+                        </div>
+                      
+                        <div class="user-profile-info">
+                           <div>
+                              <div class="user-profile-image">
+                                 <label class="user-pict">
+                                 <img
+                                    src="images/user/s4.png"
+                                    class="img-fluid user-pict-img" alt="Askbootstrap">
+                                 <a href="#"
+                                    class="user-badge-round user-badge-round-med locale-en-us top-rated-seller"></a></label>
+                              </div>
+                           </div>
+                           <div class="user-profile-label">
+                              <div class="username-line">
+                                 <a href="#" class="seller-link">Askbootstrap</a>
+                              </div>
+                              <div class="oneliner-wrapper">
+                                
+                              </div>
+                           </div>
+                        </div>
+                        <div class="buttons-wrapper">
+                           <a href="profile_settings.html" class="btn-lrg-standard btn-contact-me js-contact-me js-open-popup-join">Edit Profile
+                           </a>
+                           <a href="" class="btn-lrg-standard btn-white btn-custom-order">Public Mode</a>
+                        </div>
+                        <div class="user-stats-desc">
+                           <ul class="user-stats">
+                              <li class="location">From<strong>United States</strong></li>
+                              <li class="member-since">Member since<strong>Dec 2012</strong></li>
+                             
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="seller-profile">
+                     <div class="description">
+                        <h3>Description</h3>
+                        <p>Greetings, I am Muhammad Zaeem I have a lot of experience in web development and SEO. I am here to deliver good quality services to my clients to satisfy them. Please feel free to discuss the project. Thanks :)
+                        </p>
+                     </div>
+                     <div class="languages">
+                        <h3>Languages</h3>
+                        <ul>
+                           <li>English&nbsp;&nbsp;- <span>Fluent</span></li>
+                           <li>Spanish&nbsp;<strong>(español)</strong>&nbsp;- <span>Conversational</span></li>
+                           <li>French&nbsp;<strong>(français)</strong>&nbsp;- <span>Basic</span></li>
+                        </ul>
+                     </div>
+                     <div class="linked-accounts">
+                        <h3>Linked Accounts</h3>
+                        <ul>
+                           <li class="platform social-account facebook"><i class="platform-icon facebook hint--top"
+                              aria-hidden="true" data-hint="facebook"></i><span class="text">facebook</span></li>
+                           <li class="platform social-account google"><i class="platform-icon google hint--top"
+                              aria-hidden="true" data-hint="google"></i><span class="text">google</span></li>
+                        </ul>
+                     </div>
+                     <div class="skills">
+                        <h3>Skills</h3>
+                        <ul>
+                           <li class=""><a href="#">voice talent</a></li>
+                           <li class=""><a href="#">voice acting</a></li>
+                           <li class=""><a href="#">voiceover</a></li>
+                           <li class=""><a href="#">voice over</a></li>
+                           <li class=""><a href="#">voiceover talent</a></li>
+                           <li class=""><a href="#">voice actor</a></li>
+                           <li class=""><a href="#">voicetalent</a></li>
+                           <li class=""><a href="#">voiceacting</a></li>
+                           <li class=""><a href="#">voiceactor</a></li>
+                           <li class=""><a href="#">voiceover artist</a></li>
+                        </ul>
+                     </div>
+                     <div class="education-list list">
+                        <h3>Education</h3>
+                        <ul>
+                           <li>
+                              <p>B.A. - communication studies</p>
+                              <p>Clayton State University, United States, Graduated 2006</p>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-8 right">
+                  <ul class="nav nav-tabs">
+                        <li><a class="active" data-toggle="tab" href="#basic">Active Gigs</a></li>
+                        <li><a data-toggle="tab" href="#standard">Draft</a></li>
+                       
+                     </ul>
+                
+                  <div class="recommended">
+                     <div class="row">
+                        <div class="col-md-4" id="basic">
+                           <div>
+                              <a href="#">
+                              <img class="img-fluid" src="images/list/v1.png" />
+                              </a>
+                              <div class="inner-slider">
+                                 <div class="inner-wrapper">
+                                    <div class="d-flex align-items-center">
+                                       <span class="seller-image">
+                                       <img class="img-fluid"
+                                          src="images/user/s4.png"
+                                          alt='' />
+                                       </span>
+                                      
+                                    </div>
+                                    <h3>I will create professional audio ads or radio commercials for your project</h3>
+                                    
+                                    <div class="footer">
+                                       <i class="fa fa-heart" aria-hidden="true"></i>
+                                       <div class="price">
+                                          <a href="#">
+                                          Starting At <span> $1,205</span>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-4" id="basic">
+                           <div>
+                              <a href="#">
+                              <img class="img-fluid" src="images/list/v2.png" />
+                              </a>
+                              <div class="inner-slider">
+                                 <div class="inner-wrapper">
+                                    <div class="d-flex align-items-center">
+                                       <span class="seller-image">
+                                       <img class="img-fluid"
+                                          src="images/user/s4.png"
+                                          alt='' />
+                                       </span>
+                                     
+                                    </div>
+                                    <h3>I will create professional audio ads or radio commercials for your project</h3>
+                                   
+                                    <div class="footer">
+                                       <i class="fa fa-heart" aria-hidden="true"></i>
+                                       <div class="price">
+                                          <a href="#">
+                                          Starting At <span> $1,205</span>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div>
+                             
+                              <div class="inner-slider">
+                                 <div class="inner-wrapper">
+                                     <div class="card text-center">
+                           <div class="card-body">
+                              <h5 class="card-title">Creat a new gig</h5>
+                               <a href="#">
+                                  <img src="images/add-gigs.png" alt="" style=" max-width: 100px">
+                              </a>
+                             
+                           </div>
+                        </div>
+                                   
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                 
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="bg-white">
+         <div class="container-fluid">
+            <div class="d-flex justify-content-between">
+               <div class="footer-list">
+                  <h2>Categories</h2>
+                  <ul class="list">
+                     <li><a href="#">Graphics &amp; Design</a></li>
+                     <li><a href="#">Digital Marketing</a></li>
+                     <li><a href="#">Writing &amp; Translation</a></li>
+                     <li><a href="#">Video &amp; Animation</a></li>
+                     <li><a href="#">Music &amp; Audio</a></li>
+                     <li><a href="#">Programming &amp; Tech</a></li>
+                     <li><a href="#">Business</a></li>
+                     <li><a href="#">Lifestyle</a></li>
+                     <li><a href="#">Sitemap</a></li>
+                  </ul>
+               </div>
+               <div class="footer-list">
+                  <h2>About</h2>
+                  <ul class="list">
+                     <li><a href="#">Careers</a></li>
+                     <li><a href="#">Press &amp; News</a></li>
+                     <li><a href="#">Partnerships</a></li>
+                     <li><a href="#">Privacy Policy</a></li>
+                     <li><a href="#">Terms of Service</a></li>
+                     <li><a href="#">Intellectual Property Claims</a></li>
+                     <li><a href="#" target="_blank">Investor Relations</a></li>
+                  </ul>
+               </div>
+               <div class="footer-list">
+                  <h2>Support</h2>
+                  <ul class="list">
+                     <li><a href="#" >Help &amp; Support</a></li>
+                     <li><a href="#">Trust &amp; Safety</a></li>
+                     <li><a href="#" >Selling on Workelp
+                        </a>
+                     </li>
+                     <li><a href="#">Buying on Workelp
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="footer-list">
+                  <h2>Community</h2>
+                  <ul class="list">
+                     <li><a href="#">Events</a></li>
+                     <li><a href="#">Blog</a></li>
+                     <li><a href="#">Forum</a></li>
+                     <li><a href="#">Community Standards</a></li>
+                     <li><a href="#">Podcast</a></li>
+                     <li><a href="#">Affiliates</a></li>
+                     <li><a href="#">Invite a Friend</a></li>
+                     <li><a href="#">Become a Seller</a></li>
+                     <li><a href="#" >Workelp
+                        Elevate<small>Exclusive Benefits</small></a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="footer-list">
+                  <h2>More From Worlelp</h2>
+                  <ul class="list">
+                     <li><a href="#">Wrokelp
+                        Pro</a>
+                     </li>
+                     <li><a href="#">Workelp
+                        Studios</a>
+                     </li>
+                     <li><a href="#">Workelp
+                        Logo Maker</a>
+                     </li>
+                     <li><a href="#">Get Inspired</a></li>
+                     <li><a href="#">ClearVoice<small>Content Marketing</small></a></li>
+                     <li><a href="#">AND CO<small>Invoice Software</small></a></li>
+                     <li><a href="#">Learn<small>Online Courses</small></a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="logo">
+                  <a href="index.html">
+                    <img src="images/workhelp.png">
+                  </a>
+               </div>
+               <p>© Copyright 2020 Workelp. All Rights Reserved
+               </p>
+               <ul class="social">
+                  <li>
+                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <!-- Bootstrap core JavaScript -->
+      <script src="./js/app.js"></script>
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Contact form JavaScript -->
+      <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+      <script src="js/jqBootstrapValidation.js"></script>
+      <script src="js/contact_me.js"></script>
+      <!-- Slick -->
+      <script src="vendor/slick-master/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+      <!-- lightgallery -->
+      <script src="vendor/lightgallery-master/dist/js/lightgallery-all.min.js"></script>
+      <!-- select2 Js -->
+      <script src="vendor/select2/js/select2.min.js"></script>
+      <!-- Custom -->
+      <script src="js/custom.js"></script>
+   </body>
+</html>
