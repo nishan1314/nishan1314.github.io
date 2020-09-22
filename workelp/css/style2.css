@@ -22,7 +22,7 @@ body{
     color: #777777 !important;
     padding-left:25px !important;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .top-nav-scroll{
@@ -59,7 +59,7 @@ body{
 #mega-menu .nav-link-ok{
     border-bottom: 4px solid transparent;
     color: #777 !important;
-    font-size: 16px;    
+    font-size: 14px;    
 }
 #mega-menu .nav-link-ok:hover{
     border-bottom: 4px solid #00C2CB;

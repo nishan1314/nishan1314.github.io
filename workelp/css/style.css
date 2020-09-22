@@ -1,14 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
 /* Body */
 
 
  body {
      color: #222325;
      font-size: 13px;
-     font-family: 'Noto Sans JP', sans-serif;
-     font-weight: 400;
+     font-family: 'Verdana', sans-serif;
+     font-weight: 300;
      background-color: #F1F3F4;
 }
  .container-fluid {
