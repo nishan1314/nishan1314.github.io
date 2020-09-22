@@ -6,10 +6,15 @@
       <meta name="description" content="Gurdeep singh osahan">
       <meta name="author" content="Gurdeep singh osahan">
       <title>Seller-Profile</title>
-      <!-- Favicon Icon -->
-      <link rel="icon" type="image/png" href="images/favicon.png">
+     <!-- Favicon Icon -->
+       <link rel="icon" type="image/png" href="images/favicon.png">
       <!-- Bootstrap core CSS -->
-      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+      <!-- Bootstrap core CSS -->
+     
       <!-- Font Awesome-->
       <link href="vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
       <!-- Material Design Icons -->
@@ -21,24 +26,320 @@
       <!-- Select2 CSS -->
       <link href="vendor/select2/css/select2-bootstrap.css" />
       <link href="vendor/select2/css/select2.min.css" rel="stylesheet">
-      <!-- Custom styles for this template -->
-      <link href="css/style.css" rel="stylesheet">
+  
+     <link rel="stylesheet" href="css/style.css"/>
+     <link rel="stylesheet" href="css/style2.css"/>
    </head>
    <body>
-      <!--    header -->
-      <nav class="navbar navbar-expand-lg navbar-light topbar static-top shadow-sm bg-white osahan-nav-top px-0">
-         <div class="container-fluid">
+      <nav id="main" class="fixed-top bg-white">
+      <div class="responsive-nav navbar navbar-light">
+        <div>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+         
+         <div class="icon d-lg-none d-sm-block" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="opneSideNav()" style=" outline:none; float: right;">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  </div>
+        
+    
+        </div>
+        
+        <div>
+          <a class="navbar-brand" href="index.html"><img style="height: 38px;" src="images/workhelp.png" alt="logo"></a>
+        </div><br>
+        <div>
+          <form class=" d-sm-inline-block form-inline mr-auto my-2 my-md-0 mw-100 navbar-src">
+               <div class="input-group">
+                 <input class="form-control" type="search" placeholder="Find Services" aria-label="Search" style=" outline:none;  border-radius: 0px;width: 350px">
+                  
+               </div>
+            </form>
           
-            <a class="navbar-brand" href="index3.html"><img src="images/workhelp.png"  alt=""></a>
+        </div>
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+        <img style="height:70px;width:70px; border-radius: 50%; margin-top: -50px; margin-left:25px;" src="images/user/s4.png" alt="logo">
+        <hr>
+         <a href="index3.html">Home</a>
+        <a href="#">Inbox</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Saved</a>
+         <a class="dropdown-btn">Browse Category
+         <i class="fa fa-caret-down"></i>
+       </a>
+       <div class="dropdown-container">
+         
+            <a class="dropdown-btn">Graphics Design
+               <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-container">
+               <a class="mb-2" href="#">Logo Design</a>
+               <a class="mb-2" href="#">Brand Style Guides</a>
+               <a class="mb-2" href="#">Business Cards & Stationery</a>
+               <a class="dropdown-item mb-2" href="#">Gaming Art</a>
+               <a class="dropdown-item mb-2" href="#">Graphics for Streamers</a>
+               <a class="dropdown-item mb-2" href="#">Twitch Store</a>
+               <a class="dropdown-item mb-2" href="#"> Illustration</a>
+               <a class="dropdown-item mb-2" href="#">Pattern DesignNEW</a>
+               <a class="dropdown-item mb-2" href="#">Tattoo Design</a>
+               <a class="dropdown-item mb-2" href="#">Portraits & Caricatures</a>    
+               <a class="dropdown-item mb-2" href="#">Web & Mobile Design</a>
+               <a class="dropdown-item mb-2" href="#">Social Media Design</a>
+               <a class="dropdown-item mb-2" href="#"> AR Filters & LensesNEW</a>
+               <a class="dropdown-item mb-2" href="#">Web Banners</a>
+               <a class="dropdown-item mb-2" href="#">Architecture & Interior Design</a>
+               <a class="dropdown-item mb-2" href="#">Landscape Design</a>
+               <a class="dropdown-item mb-2" href="#"> Building Information Modeling</a>
+               <a class="dropdown-item mb-2" href="#">Packaging Design</a>
+               <a class="dropdown-item mb-2" href="#">Trade Booth Design</a>
+               <a class="dropdown-item mb-2" href="#"> Industrial & Product Design</a>
+               <a class="dropdown-item mb-2" href="#">Character Modeling</a>
+               <a class="dropdown-item mb-2" href="#">Flyer Design</a>
+               <a class="dropdown-item mb-2" href="#">Signage DesignNEW</a>
+               <a class="dropdown-item mb-2" href="#">Catalog Design</a>
+               <a class="dropdown-item mb-2" href="#">Menu Design</a>
+               <a class="dropdown-item mb-2" href="#">Postcard Design</a>
+               <a class="dropdown-item mb-2" href="#">Invitation Design</a>
+               <a class="dropdown-item mb-2" href="#">T-Shirts & Merchandise</a>
+            </div>
+
+            <a class="dropdown-btn">Digital Marketing
+               <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-container">
+               <a class="dropdown-item mb-2" href="#">Social Media Marketing</a>
+                        <a class="dropdown-item mb-2" href="#">Social Media Advertising</a>
+                        <a class="dropdown-item mb-2" href="#">SEO</a>
+                        <a class="dropdown-item mb-2" href="#">Local SEO</a>
+                        <a class="dropdown-item mb-2" href="#">Marketing Strategy</a>
+                        <a class="dropdown-item mb-2" href="#">Public Relations</a>
+                        <a class="dropdown-item mb-2" href="#">Content Making</a>
+                        <a class="dropdown-item mb-2" href="#">Video Marketing</a>
+                        <a class="dropdown-item mb-2" href="#">Email Marketing</a>
+                        <a class="dropdown-item mb-2" href="#">Crowdfunding</a>
+                        <a class="dropdown-item mb-2" href="#">SEM</a>
+                        <a class="dropdown-item mb-2" href="#">Surveys</a>
+                        <a class="dropdown-item mb-2" href="#">Web Analytics</a>
+                        <a class="dropdown-item mb-2" href="#">Influencer Marketing</a>
+                        <a class="dropdown-item mb-2" href="#">E-Commerce Marketing</a>
+                        <a class="dropdown-item mb-2" href="#">Mobile Marketing & Advertising</a>
+                        <a class="dropdown-item mb-2" href="#">Podcast Marketing</a>
+                        <a class="dropdown-item mb-2" href="#">Book $ eBook Marketing</a>
+                        <a class="dropdown-item mb-2" href="#">Domain Research</a>
+                        <a class="dropdown-item mb-2" href="#">Music Promotion</a>
+                        <a class="dropdown-item mb-2" href="#">Web Traffic</a>
+                        <a class="dropdown-item mb-2" href="#">Others</a>
+            </div>
+
+            <a class="dropdown-btn">Writing & Translation
+               <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-container">
+               <a class="mb-2" href="#">Translation</a>
+               <a class="mb-2" href="#">Online Langiage Lesson</a>
+               <a class="mb-2" href="#">Proofreading & Editing</a>
+               <a class="mb-2" href="#">Articles & Blog Posts</a>
+               <a class="mb-2" href="#">Brand Voice & Tone</a>
+               <a class="mb-2" href="#">Resume Writing</a>
+               <a class="mb-2" href="#">Cover Letters</a>
+               <a class="mb-2" href="#">LinkedIn Profiles</a>
+               <a class="mb-2" href="#">Podcast Writing</a>
+               <a class="mb-2" href="#">White Papers</a>
+               <a class="mb-2" href="#">Case Studies</a>
+               <a class="mb-2" href="#">Sales Copy</a>
+
+            
+               <a class="mb-2" href="#">Book & ebook Writing</a>
+               <a class="mb-2" href="#">Book Editing</a>
+               <a class="mb-2" href="#">Beta Reading</a>
+               <a class="mb-2" href="#">Website Content</a>
+               <a class="mb-2" href="#">Product Description</a>
+               <a class="mb-2" href="#">UX Writing</a>
+               <a class="mb-2" href="#">Grant Writing</a>
+               <a class="mb-2" href="#">Technical Writing</a>
+               <a class="mb-2" href="#">Businnes Names & Slogans</a>
+               <a class="mb-2" href="#">ScriptWriting</a>
+               <a class="mb-2" href="#">Email Copy</a>
+               <a class="mb-2" href="#">SpeechWriting</a>
+            </div>
+
+            <a class="dropdown-btn">Video & Animation
+               <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-container">
+                        <a class="mb-2" href="#">Whiteboard & Animated Explainers</a>
+                        <a class="mb-2" href="#">Video Editing</a>
+                        <a class="mb-2" href="#">Short Video Ads</a>
+                        <a class="mb-2" href="#">Lyric & Music Videos</a>
+                        <a class="mb-2" href="#">Animated GIFs</a>
+                        <a class="mb-2" href="#">Logo Animation</a>
+                        <a class="mb-2" href="#">Intros & Outros</a>
+                        <a class="mb-2" href="#">App & Website Previews</a>
+                        <a class="mb-2" href="#">Character Animation</a>
+                        <a class="mb-2" href="#">3D Product Animation</a>
+                        <a class="mb-2" href="#">Animation for Kids</a>
+                        <a class="mb-2" href="#">Animation for Streamers</a>
+
+                     
+                     
+                        <a class="mb-2" href="#">Spokespersons Videos</a>
+                        <a class="mb-2" href="#">Unboxing Videos</a>
+                        <a class="mb-2" href="#">Visual Effects</a>
+                        <a class="mb-2" href="#">Article to Video</a>
+                        <a class="mb-2" href="#">Subtitles & Captions</a>
+                        <a class="mb-2" href="#">Screencasting Videos</a>
+                        <a class="mb-2" href="#">Slideshows Videos</a>
+                        <a class="mb-2" href="#">Book Trailers</a>
+                        <a class="mb-2" href="#">Game Trailers</a>
+                        <a class="mb-2" href="#">Real Estate Promos</a>
+                        <a class="mb-2" href="#">Product Photography</a>
+                        <a class="mb-2" href="#">Local Photography</a>
+
+            </div>
+
+            <a class="dropdown-btn">Music and Audio
+               <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-container">
+               <a class="dropdown-item mb-2" href="#">Voice Over</a>
+                        <a class="mb-2" href="#">Producers & Composers</a>
+                        <a class="mb-2" href="#">Singers & Vocalists</a>
+                        <a class="mb-2" href="#">Mixing & Mastering</a>
+                        <a class="mb-2" href="#">Session Musicians</a>
+                        <a class="mb-2" href="#">Online Music Lessons</a>
+                        <a class="mb-2" href="#">Podcast Editing</a>
+                        <a class="mb-2" href="#">Songwriters</a>
+                        <a class="mb-2" href="#">Beat Making</a>
+                        
+
+                     
+                        <a class="mb-2" href="#">Audiobook Production</a>
+                        <a class="mb-2" href="#">Audio Ads Production</a>
+                        <a class="mb-2" href="#">Sound Design</a>
+                        <a class="mb-2" href="#">Jingles & Intros</a>
+                        <a class="mb-2" href="#">DJ Drops & Tags</a>
+                        <a class="mb-2" href="#">Dialogue Editing</a>
+                        <a class="mb-2" href="#">Music Transcription</a>
+                        <a class="mb-2" href="#">Vocal Tuning</a>
+                        <a class="mb-2" href="#">Others</a>
+                        
+            </div>
+
+            <a class="dropdown-btn">Programming & Tech
+               <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-container">
+               <a class="mb-2" href="#">WordPress</a>
+               <a class="mb-2" href="#">Website Builders & CMS</a>
+               <a class="mb-2" href="#">Game Development</a>
+               <a class="mb-2" href="#">Development for Streamers</a>
+               <a class="mb-2" href="#">Web Programming</a>
+               <a class="mb-2" href="#">E-Commerce Development</a>
+               <a class="mb-2" href="#">Mobile Apps</a>
+               <a class="mb-2" href="#">Desktop Applications</a>
+               <a class="mb-2" href="#">Support & IT</a>
+               <a class="mb-2" href="#">Chatbots</a>
            
-            <ul class="navbar-nav align-items-left ml-auto">
                
-      <li class="nav-item active">
-         <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+
+           
+               <a class="mb-2" href="#">Match With a Developer</a>
+               <a class="mb-2" href="#">Online Coding Lessons</a>
+               <a class="mb-2" href="#">Cybersecurity & Data Protection</a>
+               <a class="mb-2" href="#">Data Analysis & Reports</a>
+               <a class="mb-2" href="#">Convert Files</a>
+               <a class="mb-2" href="#">Databases</a>
+               <a class="mb-2" href="#">Databases</a>
+               <a class="mb-2" href="#">QA</a>
+               <a class="mb-2" href="#">Others</a>
+            </div>
+
+            <a class="dropdown-btn">Business
+               <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-container">
+               <a class="mb-2" href="#">E-Commerce Management</a>
+               <a class="mb-2" href="#">Virtual Assistant</a>
+               <a class="mb-2" href="#">Data Entry</a>
+               <a class="mb-2" href="#">Market Research</a>
+               <a class="mb-2" href="#">Project Management</a>
+               <a class="mb-2" href="#">Career Counseling</a>
+               <a class="mb-2" href="#">HR Consulting</a>
+               <a class="mb-2" href="#">Business Plans</a>
+               
+            
+               <a class="mb-2" href="#">Branding Services</a>
+               <a class="mb-2" href="#">Legal Consulting</a>
+               <a class="mb-2" href="#">Financial Consulting</a>
+               <a class="mb-2" href="#">Business Consulting</a>
+               <a class="mb-2" href="#">Presentations</a>
+               <a class="mb-2" href="#">Flyer Distribution</a>
+               <a class="mb-2" href="#">Lead Generation</a>
+               <a class="mb-2" href="#">Other</a>
+            </div>
+
+            <a class="dropdown-btn">Lifestyle
+               <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-container">
+               <a class="mb-2" href="#">Gaming</a>
+               <a class="mb-2" href="#">Online Lessons</a>
+               <a class="mb-2" href="#">Astrology & Readings</a>
+               <a class="mb-2" href="#">Spiritual & Healing</a>
+               <a class="mb-2" href="#">Fitness Lessons</a>
+               <a class="mb-2" href="#">Personal Stylists</a>
+               <a class="mb-2" href="#">Cooking Lessons</a>
+               <a class="mb-2" href="#">Craft Lessons</a>
+               <a class="mb-2" href="#">Arts & Crafts</a>
+               <a class="mb-2" href="#">Relationship Advice</a>
+           
+           
+               <a class="mb-2" href="#">Health, Nutrition & Fitness</a>
+               <a class="mb-2" href="#">Family & Genealogy</a>
+               <a class="mb-2" href="#">Greeting Cards & Videos</a>
+               <a class="mb-2" href="#">Your Message On...</a>
+               <a class="mb-2" href="#">Viral Videos</a>
+               <a class="mb-2" href="#">Celebrity Impersonators</a>
+               <a class="mb-2" href="#">Collectibles</a>
+               <a class="mb-2" href="#">Traveling</a>
+               <a class="mb-2" href="#">Others</a>
+            </div>
+      
+       </div>
+         <a href="workelp_pro.html">Workelp Professional</a>
+        
+
+        <hr>
+        
+        <a href="#">Mangage Request</a>
+        <a href="#">Post a Request</a>
+        <a href="#">Manage Selles</a>
+        <hr>
+        <a href="profile_settings.html">Settings</a>
+        <a href="#">Logout</a>
+        <a href="#">English</a>
+        <a href="#">USD</a>
+        <a href="#">Open in app</a>
+
+
+      </div>
+    </nav>
+<nav class="navbar  navbarHide navbar-expand-lg navbar-light topbar static-top shadow-sm bg-white osahan-nav-top px-0">
+         <div class="container-fluid">
+            <!-- Sidebar Toggle (Topbar) -->
+            <a class="navbar-brand" href="index3.html"><img src="images/workhelp.png"  alt=""></a>
+            <!-- Topbar Search -->
+           
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav align-items-center ml-auto">
+               
+      <li class="nav-item">
+         <a class="nav-link-ok" href="#">Dashboard <span class="sr-only">(current)</span></a>
       </li>
-     
-      <li class="nav-item dropdown no-arrow no-caret mr-3 dropdown-notifications">
-                  <a class=" nav-link dropdown-toggle" id="navbarDropdownMessages" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       <li class="nav-item dropdown no-arrow no-caret  dropdown-notifications">
+                  <a class="nav-link-ok dropdown-toggle" id="navbarDropdownMessages" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      Messages
                   </a>
                   <div class="dropdown-menu dropdown-menu-right border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownMessages">
@@ -63,19 +364,64 @@
                      <a class="dropdown-item dropdown-notifications-footer" href="messages.html">Read All Messages</a>
                   </div>
                </li>
-
-               <li class="nav-item active">
-                  <a class="nav-link" href="#">Orders</a>
+      <li class="nav-item">
+         <a class="nav-link-ok" href="#">Orders <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link-ok" href="#">Gigs <span class="sr-only">(current)</span></a>
+      </li>
+       <li class="nav-item">
+         <a class="nav-link-ok" href="workelp_pro.html">Analytics<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link-ok" href="workelp_pro.html">Earnings <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown no-arrow no-caret mr-1 dropdown-user">
+                  <a class="nav-link-ok dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community</a>
+                  <div class="dropdown-menu dropdown-menu-right border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownUserImage">
+                     
+                     
+                     <a class="dropdown-item" href="#">
+                        <div class="dropdown-item-icon">
+                           
+                        </div>
+                        Events
+                     </a>
+                     <a class="dropdown-item" href="account.html">
+                        <div class="dropdown-item-icon">
+                          
+                        </div>
+                        Blog
+                     </a>
+                      <a class="dropdown-item" href="account.html">
+                        <div class="dropdown-item-icon">
+                          
+                        </div>
+                        Forum
+                     </a>
+                     
+                     <a class="dropdown-item" href="account.html">
+                        <div class="dropdown-item-icon">
+                          
+                        </div>
+                        Community Standars
+                     </a>
+                     <a class="dropdown-item" href="account.html">
+                        <div class="dropdown-item-icon">
+                          
+                        </div>
+                        PodCast
+                     </a>
+                    
+                  </div>
                </li>
-
-              
      
      
       <li class="nav-item dropdown no-arrow no-caret dropdown-user">
-                  <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-fluid" src="images/user/s7.png"></a>
+                  <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-fluid" src="images/user/s2.png"></a>
                   <div class="dropdown-menu dropdown-menu-right border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownUserImage">
                      <h6 class="dropdown-header d-flex align-items-center">
-                        <img class="dropdown-user-img" src="images/user/s7.png">
+                        <img class="dropdown-user-img" src="images/user/s2.png">
                         <div class="dropdown-user-details">
                            <div class="dropdown-user-details-name">Askbootstrap</div>
                            <div class="dropdown-user-details-email">iamosahan@gmail.com</div>
@@ -83,7 +429,7 @@
                         </div>
                      </h6>
                      <div class="dropdown-divider"></div>
-                     <a class="dropdown-item" href="#">
+                     <a class="dropdown-item" href="account.html">
                         <div class="dropdown-item-icon">
                            
                         </div>
@@ -133,13 +479,6 @@
             </ul>
          </div>
       </nav>
-      <!-- Navigation -->
-
-
-
-
-
-      
 
       <div class="main-page second py-5">
          <div class="container-fluid">
@@ -158,7 +497,7 @@
                               <div class="user-profile-image">
                                  <label class="user-pict">
                                  <img
-                                    src="images/user/s4.png"
+                                    src="images/user/s2.png"
                                     class="img-fluid user-pict-img" alt="Askbootstrap">
                                  <a href="#"
                                     class="user-badge-round user-badge-round-med locale-en-us top-rated-seller"></a></label>
@@ -177,7 +516,7 @@
                        <div class="user-stats-desc">
                            <ul class="user-stats">
                               <li >Rasponse Rate<div class="progress">
-                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width:20%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width:90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                      </div></li>
                               <li >Delivered On Time<strong>Dec 2012</strong></li>
                              
@@ -281,7 +620,7 @@
             </div>
          </div>
       </div>
-      <footer class="bg-white">
+       <footer class="bg-white">
          <div class="container-fluid">
             <div class="d-flex justify-content-between">
                <div class="footer-list">
@@ -364,7 +703,7 @@
                     <img src="images/workhelp.png">
                   </a>
                </div>
-               <p>© Copyright 2020 Miver. All Rights Reserved
+               <p>© Copyright 2020 Workelp. All Rights Reserved
                </p>
                <ul class="social">
                   <li>
@@ -386,7 +725,8 @@
             </div>
          </div>
       </footer>
-      <!-- Bootstrap core JavaScript -->
+       <!-- Bootstrap core JavaScript -->
+      <script src="./js/app.js"></script>
       <script src="vendor/jquery/jquery.min.js"></script>
       <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <!-- Contact form JavaScript -->
