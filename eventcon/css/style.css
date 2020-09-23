@@ -460,7 +460,7 @@ h3 {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  background: #FF4533;
+  background: #7030A0;
   z-index: 99;
   width: 40px;
   height: 40px;
@@ -800,7 +800,7 @@ h3 {
 .section_title h4 {
   font-size: 30px;
   font-weight: 400;
-  color: #FF4533;
+  color: #FFCC00;
   font-family: "Anton", sans-serif;
   margin-bottom: 0;
 }
@@ -931,21 +931,6 @@ h3 {
   top: -9px;
 }
 
-/* line 78, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slick-nav.scss */
-.slicknav_btn {
-  background-color: transparent;
-  cursor: pointer;
-  margin-bottom: 10px;
-  position: relative;
-  z-index: 99;
-  border: none;
-  border-radius: 3px;
-  top: 5px;
-  padding: 5px;
-  right: 5px;
-  margin-top: -5px;
-  top: -31px;
-}
 
 /* line 92, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slick-nav.scss */
 .slicknav_btn {
@@ -959,7 +944,7 @@ h3 {
   top: 5px;
   padding: 5px;
   right: 0;
-  margin-top: -5px;
+  margin-top: -35px;
   top: -36px;
 }
 
@@ -1337,7 +1322,7 @@ transform-origin:  0% 50%; }
 
 /* line 241, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area.sticky {
-  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 16px 0px #fff;
   position: fixed;
   width: 100%;
   top: -70px;
@@ -1347,7 +1332,7 @@ transform-origin:  0% 50%; }
   transform: translateY(70px);
   transition: transform 500ms ease, background 500ms ease;
   -webkit-transition: transform 500ms ease, background 500ms ease;
-  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+  
   padding: 0px 0px;
   background: #000;
 }
@@ -2209,7 +2194,7 @@ transform-origin:  0% 50%; }
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_performer.scss */
 .performar_area {
-  padding-top:30px;
+  padding-top:100px;
   padding-bottom: 63px;
 }
 
@@ -2458,7 +2443,7 @@ transform-origin:  0% 50%; }
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  background: #1EC6B6;
+  background: #FFCC00;
   width: 26px;
   height: 26px;
   -webkit-border-radius: 50%;
@@ -2534,7 +2519,7 @@ transform-origin:  0% 50%; }
 
 /* line 90, ../../Arafath/CL/December/236. Event-02/HTML/scss/_program_details.scss */
 .program_details_area .program_detail_wrap .single_propram .porgram_top span {
-  color: #FF4533;
+  color: #F03092;
   font-size: 30px;
   font-family: "Anton", sans-serif;
   display: block;
@@ -2565,76 +2550,67 @@ transform-origin:  0% 50%; }
   color: #fff;
 }
 
-/* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-.footer {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background: #000000;
-  position: relative;
-  z-index: 9;
-}
+/* Main Footer */
+footer .main-footer{  padding: 20px 0;  background: #000000;}
+footer ul{  padding-left: 0;  list-style: none;}
 
-/* line 9, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-.footer .footer_top {
-  padding-top: 148px;
-  padding-bottom: 140px;
-}
+/* Copy Right Footer */
+.footer-copyright { background: #000; padding: 5px 0; border-top:1px solid #333333;}
+.footer-copyright a { color: #ccc; font-size:14px}
+.footer-copyright a:hover { color: #fff; font-size:14px}
+.footer-copyright p { color: #ccc; font-size:14px;}
 
-@media (max-width: 767px) {
-  /* line 9, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-  .footer .footer_top {
-    padding-top: 60px;
-    padding-bottom: 30px;
-  }
-}
+/* Footer Top */
+.footer-top{  background: #252525;  padding-bottom: 30px; margin-bottom: 30px;  border-bottom: 3px solid #222;}
 
-/* line 17, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-.footer .footer_top .footer_widget h4 {
-  font-size: 30px;
-  font-weight: 400;
-  color: #FF4533;
-  margin-bottom: 24px;
-}
+/* Footer transparent */
+footer.transparent .footer-top, footer.transparent .main-footer{  background: transparent;}
+footer.transparent .footer-copyright{ background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3) ;}
 
-/* line 23, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-.footer .footer_top .footer_widget h3 {
-  font-size: 30px;
-  font-weight: 400;
-  color: #fff;
-}
+/* Footer light */
+footer.light .footer-top{ background: #f9f9f9;}
+footer.light .main-footer{  background: #f9f9f9;}
+footer.light .footer-copyright{ background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3) ;}
 
-/* line 28, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-.footer .footer_top .footer_widget p {
-  margin-top: 25px;
-  margin-bottom: 41px;
-}
+/* Footer 4 */
+.footer- .logo {    display: inline-block;}
 
-/* line 34, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-.footer .copy-right_text {
-  padding-bottom: 45px;
-}
+/*==================== 
+  Widgets 
+====================== */
+.widget{  padding: 20px;  margin-bottom: 40px;}
+.widget.widget-last{  margin-bottom: 0px;}
+.widget.no-box{ padding: 0; background-color: transparent;  margin-bottom: 40px;
+  box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none;}
+.widget.subscribe p{  margin-bottom: 18px;}
+.widget li a{ color: #ccc}
+.widget li a:hover{ color: #fff;}
+.widget-title {margin-bottom: 20px;}
+.widget-title span {background: #839FAD none repeat scroll 0 0;display: block; height: 1px;margin-top: 25px;position: relative;width: 20%;}
+.widget-title span::after {background: inherit;content: "";height: inherit;    position: absolute;top: -4px;width: 50%;}
+.widget-title.text-center span,.widget-title.text-center span::after {margin-left: auto;margin-right:auto;left: 0;right: 0;}
+.widget .badge{ float: right; background: #7f7f7f;}
 
-/* line 36, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-.footer .copy-right_text .copy_right {
-  font-size: 14px;
-  color: #AAB1B7;
-  margin-bottom: 0;
-  font-weight: 400;
-  font-family: "Muli", sans-serif;
-}
+.typo-light h1, 
+.typo-light h2, 
+.typo-light h3, 
+.typo-light h4, 
+.typo-light h5, 
+.typo-light h6,
+.typo-light p,
+.typo-light div,
+.typo-light span,
+.typo-light small{  color: #fff;}
 
-@media (max-width: 767px) {
-  /* line 36, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-  .footer .copy-right_text .copy_right {
-    font-size: 14px;
-  }
-}
+ul.social-footer2 { margin: 0;padding: 0; width: auto;}
+ul.social-footer2 li {display: inline-block;padding: 0;}
+ul.social-footer2 li a {display: block; height:30px;width: 30px;text-align: center;}
+.btn{background-color: #7030A0; color:#fff;}
+.btn:hover{border-color: #7030A0;
+  color: #FD3199;
+  background: transparent;
+transition: all 250ms ease-in-out 0s;
 
-/* line 45, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-.footer .copy-right_text .copy_right a {
-  color: #FF4533;
 }
 
 /*=================== contact banner start ====================*/
@@ -5785,4 +5761,9 @@ background-color:#EF2F91;
 color:white;
 border-radius:15px;
 }
-.entry_btn:hover{color:white;}
+
+.entry_btn:hover{
+  background-color:#EF2F91;
+color:white;
+}
+
