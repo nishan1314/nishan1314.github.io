@@ -1483,6 +1483,9 @@ transform-origin:  0% 50%; }
 .slider_bg_1 {
   background-image: url(../img/banner/banner.png);
 }
+.slider_bg_2 {
+  background-image: url(../img/stage.jpeg);
+}
 
 /* line 4, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 

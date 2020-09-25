@@ -1145,7 +1145,6 @@
 }
  .third-menu {
      border-bottom: 1px solid #dadbdd;
-     position: sticky;
      top: 0;
      background: #fff;
      z-index: 99;
